@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Belajar HTML</title>
+    <style>
+        .card-container {
+            display: flex;
+            justify-content: left;
+            margin-top: 20px;
+            margin-left: 30px; /* Adjust margin as needed */
+        }
+        .navbar-btns button {
+            margin-right: 5px; /* Adjust margin as needed */
+        }
+        .card {
+    margin-bottom: 10px; /* Adjust as needed */
+}
+
+        
+     </style>
+</head>
+<body>
+    <div>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="beranda.html">
+                    <img src="assets/img/Picture1.png"style="width: 130px; height: 70px ;">
+                </a>                
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="beranda.html">Beranda</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="tentang.html">Tentang Kami</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="harga.html">Harga</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Belajar</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="navbar-btns">
+                    <button type="button" class="btn btn-outline-primary">Masuk</button>
+                    <button type="button" class="btn btn-primary">Daftar</button>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <div class="container-fluid hero-header mb-5">
+        <div class="container">
+            <div class="row g-5 align-items-center">
+                <div class="col-lg-6 text-center text-lg-start">
+                    <h1 class="display-4 text-black animated slideInRight"><strong>Belajar Bahasa Asing</strong> <span class="fw-light text-dark"><strong>Semudah Belajar</strong></span> <strong>Bahasa Mu Sendiri</strong></h1>
+                    <p class="text-balck mb-4 animated slideInRight" style="text-align: justify;">Bersama LinguaLearn Wujudkan Impian Mu Belajar Bahasa Apapun
+                        Sesuai Keinginan Mu, Bersama Dengan Penutur Asli Dan Struktur Kurikulum 
+                        Yang Teruji Oleh Ahli Bahasa Seluruh Dunia! </p>
+                    <a href="" class="btn btn-primary py-2 px-4 me-3 animated slideInRight">Mulai Belajar Sekarang</a>
+                    <a href="" class="btn btn-outline-primary py-2 px-4 animated slideInRight">Dapatkan Percobaan Kelas Gratis</a>
+                </div>
+                <div class="col-lg-6">
+                    <img class="img-fluid animated pulse infinite" src="assets/img/Picture3.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container mb-5" style="margin-top: 70px;">
+        <div class="row align-items-center">
+            <p class="text-center">Fitur LinguaLearn</p>
+            <h1 class="display-5 text-black text-center"><strong>Modul Yang Berstandar Internasional</strong> <span class="fw-light text-dark"><strong>Dan Lingkungan Belajar</strong></span> <strong>Yang Mendukung</strong></h1>
+        </div>
+    </div>
+    <div class="container-fluid hero-header mb-5">
+        <div class="container">
+            <div class="row g-5 align-items-center justify-content-center"><!-- Menggunakan justify-content-center untuk mengatur agar konten menjadi terpusat secara horizontal -->
+                <div class="col-lg-3 text-center text-lg-start">
+                    <div class="card mx-auto" style="width: 18rem;"> <!-- Menambahkan kelas mx-auto untuk memusatkan secara horizontal -->
+                        <div class="card-body py-4"> <!-- Menambahkan kelas py-4 untuk memberikan padding di atas dan bawah -->
+                            <i class="fa-solid fa-desktop"></i><span style="margin-left: 10px;">Modul Pembelajaran</span>
+                            <p class="card-text" style="margin-top: 30px;">Kami Memiliki Modul Pembelajaran Yang Mengedepankan Metode Belajar Visual, Auditori, Dan Kinestetik.</p>
+                            <a href="#" class="card-link">Pelajari Lebih Lanjut ></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 text-center text-lg-start">
+                    <div class="card mx-auto" style="width: 18rem;">
+                        <div class="card-body py-4">
+                            <i class="fa-solid fa-laptop"></i></i><span style="margin-left: 10px;">Penutur Asli</span>
+                            <p class="card-text" style="margin-top: 30px;">Membangun Lingkungan Belajar Dengan Penutur Asli Bahasa Yang Kamu Pelajari Untuk Memudahkan Dalam Proses Belajar.</p>
+                            <a href="#" class="card-link">Pelajari Lebih Lanjut ></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 text-center text-lg-start">
+                    <div class="card mx-auto" style="width: 18rem;">
+                        <div class="card-body py-4">
+                            <i class="fa-solid fa-chart-line"></i><span style="margin-left: 10px;">Forum Diskusi Global</span>
+                            <p class="card-text" style="margin-top: 30px;">Dengan Menjangkau Pengguna Global Dan Menyatukannya Dalam Forum Diskusi Sehingga Dapat Belajar Bersama Pengguna Lain.</p>
+                            <a href="#" class="card-link">Pelajari Lebih Lanjut ></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container mb-5" style="margin-top: 50px;">
+        <div class="row align-items-center">
+            <p class="text-center">Metode Belajar LinguaLearn</p>
+            <h1 class="display-4 text-black text-center"><strong>Menjadikan Pembelajaran</strong> <span class="fw-light text-dark"><strong> Yang Menarik Dan Efisien </strong></span> <strong>  Adalah Tujuan Kami</strong></h1>
+        </div>
+    </div> 
+    <div class="container-fluid hero-header mb-5">
+        <div class="container">
+            <div class="row g-4 align-items-center">
+                <div class="col-lg-6">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <img src="assets/img/gambar1.png" alt="deskripsi 1" width="70" height="70" style="float: left; margin-right: 20px;">
+                            <span style="vertical-align: middle; text-align: left; font-size: 20px;">Kami Menggunakan Metode Belajar Yang Sesuai Dengan Gaya Belajar Peserta</span>
+                        </div>
+                        <div class="col-lg-12">
+                            <img src="assets/img/gambar1.png" alt="deskripsi 2" width="70" height="70" style="float: left; margin-right: 20px;">
+                            <span style="vertical-align: middle; text-align: left; font-size: 20px;">Modul Yang Disesuaikan Dengan Kemampuan Peserta</span>
+                        </div>
+                        <div class="col-lg-12" style="display: flex; align-items: center;">
+                            <img src="assets/img/gambar1.png" alt="deskripsi 3" width="70" height="70" style="float: left; margin-right: 20px;">
+                            <span style="text-align: left; font-size: 20px;">Praktek Dan Implementasi Pembelajaran Langsung</span>
+                        </div>
+                        
+                        <div class="col-lg-12">
+                            <img src="assets/img/gambar1.png" alt="deskripsi 4" width="70" height="70" style="float: left; margin-right: 20px;">
+                            <span style="vertical-align: middle; text-align: left; font-size: 20px;">Lingkungan Yang Membuat Seru Dan Tidak Terasa Membosankan</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="row justify-content-end">
+                        <div class="align-items-center">
+                            <img class="img-fluid animated pulse infinite" src="assets/img/Picture4.png" alt="gambar orang">
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    
+    
+    
+    
+
+          
+
+                
+                
+                
+            </div>
+        </div>
+    </div>
+    
+    
+                
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/a329084b4e.js" crossorigin="anonymous"></script>
+</body>
+</html>
