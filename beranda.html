@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+<head>   
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Belajar HTML</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <style>
                
         .card-container {
@@ -46,6 +46,7 @@
      </style>
 </head>
 <body>
+    <!-- Bagian Navbar -->
     <div>
         <nav class="navbar navbar-expand-lg navbar-light bg-body-tertiary">
             <div class="container-fluid">
@@ -71,31 +72,33 @@
                         </li>
                     </ul>
                     <div class="navbar-btns">
-                        <button type="button" class="btn btn-outline-primary">Masuk</button>
-                        <button type="button" class="btn btn-primary">Daftar</button>
+                        <a href="login.html" class="btn btn-outline-primary">Masuk</a>
+                        <a href="login.html" class="btn btn-primary">Registrasi</a>
                     </div>
                 </div>
             </div>
         </nav>
     </div>
-    
+
+    <!-- Bagian isi konten -->
     <div class="container-fluid hero-header mb-5">
         <div class="container">
             <div class="row g-5 align-items-center">
-                <div class="col-lg-6 text-center text-lg-start">
+                <div class="col-lg-6 order-lg-1 text-center text-lg-start">
                     <h1 class="display-4 text-black animated slideInRight"><strong>Belajar Bahasa Asing</strong> <span class="fw-light text-dark"><strong>Semudah Belajar</strong></span> <strong>Bahasa Mu Sendiri</strong></h1>
-                    <p class="text-balck mb-4 animated slideInRight" style="text-align: justify;">Bersama LinguaLearn Wujudkan Impian Mu Belajar Bahasa Apapun
+                    <p class="text-black mb-4 animated slideInRight" style="text-align: justify;">Bersama LinguaLearn Wujudkan Impian Mu Belajar Bahasa Apapun
                         Sesuai Keinginan Mu, Bersama Dengan Penutur Asli Dan Struktur Kurikulum 
                         Yang Teruji Oleh Ahli Bahasa Seluruh Dunia! </p>
                     <a href="" class="btn btn-primary py-2 px-4 me-3 animated slideInRight">Mulai Belajar Sekarang</a>
                     <a href="" class="btn btn-outline-primary py-2 px-4 animated slideInRight">Dapatkan Percobaan Kelas Gratis</a>
                 </div>
-                <div class="col-lg-6">
+                <div class="col-lg-6 order-lg-2">
                     <img class="img-fluid animated pulse infinite" src="assets/img/Picture3.png" alt="">
                 </div>
             </div>
         </div>
     </div>
+    
     
 
     <div class="container mb-5" style="margin-top: 70px;">
@@ -152,23 +155,26 @@
             <div class="row g-4 align-items-center">
                 <div class="col-lg-6">
                     <div class="row">
-                        <div class="col-lg-12 mb-3 mb-lg-0">
+                        <div class="col-lg-12 mb-3 mb-lg-0" style="display: flex; align-items: center; padding: 10px;">
                             <img src="assets/img/gambar1.png" alt="deskripsi 1" width="70" height="70" style="float: left; margin-right: 20px;">
-                            <span style="vertical-align: middle; text-align: left; font-size: 20px;">Kami Menggunakan Metode Belajar Yang Sesuai Dengan Gaya Belajar Peserta</span>
+                            <span style="text-align: left; font-size: 20px;">Kami Menggunakan Metode Belajar Yang Sesuai Dengan Gaya Belajar Peserta</span>
+                        </div>                        
+                        
+                        <div class="col-lg-12 mb-3 mb-lg-0" style="display: flex; align-items: center; padding: 10px;">
+                            <img src="assets/img/icon2.png" alt="deskripsi 2" width="70" height="70" style="float: left; margin-right: 20px;">
+                            <span style="text-align: left; font-size: 20px;">Modul Yang Disesuaikan Dengan Kemampuan Peserta</span>
                         </div>
-                        <div class="col-lg-12 mb-3 mb-lg-0">
-                            <img src="assets/img/gambar1.png" alt="deskripsi 2" width="70" height="70" style="float: left; margin-right: 20px;">
-                            <span style="vertical-align: middle; text-align: left; font-size: 20px;">Modul Yang Disesuaikan Dengan Kemampuan Peserta</span>
-                        </div>
-                        <div class="col-lg-12 mb-3 mb-lg-0" style="display: flex; align-items: center;">
-                            <img src="assets/img/gambar1.png" alt="deskripsi 3" width="70" height="70" style="float: left; margin-right: 20px;">
+                        
+                        <div class="col-lg-12 mb-3 mb-lg-0" style="display: flex; align-items: center; padding: 10px;">
+                            <img src="assets/img/icon3.png" alt="deskripsi 3" width="70" height="70" style="float: left; margin-right: 20px;">
                             <span style="text-align: left; font-size: 20px;">Praktek Dan Implementasi Pembelajaran Langsung</span>
                         </div>
                         
-                        <div class="col-lg-12">
-                            <img src="assets/img/gambar1.png" alt="deskripsi 4" width="70" height="70" style="float: left; margin-right: 20px;">
-                            <span style="vertical-align: middle; text-align: left; font-size: 20px;">Lingkungan Yang Membuat Seru Dan Tidak Terasa Membosankan</span>
+                        <div class="col-lg-12 mb-3 mb-lg-0" style="display: flex; align-items: center; padding: 10px;">
+                            <img src="assets/img/icon4.png" alt="deskripsi 4" width="70" height="70" style="float: left; margin-right: 20px;">
+                            <span style="text-align: left; font-size: 20px;">Lingkungan Yang Membuat Seru Dan Tidak Terasa Membosankan</span>
                         </div>
+                        
                     </div>
                 </div>
                 <div class="col-lg-6">
