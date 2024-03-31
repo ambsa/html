@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>SignIn</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/style4.css ">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="../assets/css/animate.min.css">
+    <link rel="stylesheet" href="../assets/css/sweetalert2.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    
+</head>
+
+<body>       
+    <div class="container" style="max-width: 950px;">
+        <section class="login py-5">            
+            <div class="container-sm"> 
+                <div class="row g-0" style="background-color: #EDFFF9">
+                    <div class="col-lg-4">
+                        <img src="assets/img/logo_bendera_1.png" class="img-fluid login-img" alt="logo bendera">
+                    </div>                    
+                    <div class="form col-lg-7 col-md-7 col-sm-10 col-10 text-center py-5 ">                        
+                        <img src="assets/img/Picture1.png" class="img-fluid form-img" alt="logo">
+                        <!-- Tombol Kembali -->
+                        <a href="beranda.html" class="btn-back"><i class="fa-solid fa-xmark"></i></i></a>
+                        <!-- Formulir Login -->
+                        <form action="validasi.php" method="post">
+                            <div class="form-row pt-5">
+                                <div class="offset-1 col-lg-10">
+                                    <input type="text" name="username" class="inp my-3 px-3" placeholder="Nama Pengguna" required="required" style="background-color: #EDFFF9;">
+                                </div>
+                            </div>
+                            <div class="form-row pt-0">
+                                <div class="offset-1 col-lg-10">
+                                    <input type="password" name="password" class="inp my-3 px-3" placeholder="Sandi" required="required" style="background-color: #EDFFF9;">
+                                </div>
+                            </div>
+                            <div class="form-row pt-0">
+                                <div class="offset-1 col-lg-10">
+                                    <input type="password" name="conf password" class="inp my-3 px-3" placeholder="Konfirmasi Sandi" required="required" style="background-color: #EDFFF9;">
+                                </div>
+                            </div>
+                            <div class="form-row pt-0">
+                                <div class="offset-1 col-lg-10">
+                                    <input type="text" name="email" class="inp my-3 px-3" placeholder="Email" required="required" style="background-color: #EDFFF9;">
+                                </div>
+                            </div>
+                            <a href="register.php" style="text-align: right;"><p>Lupa Sandi?</p></a>                            
+                            <button class="btn1">Masuk Akun</button><br><br>
+                        </form>
+                        <h2 class="title">Atau Masuk Dengan</h2>  <br>  
+                        <div class="navbar-btns">
+                            <a href="login.html" class="btn btn-outline-primary" style="width: 100px;"><img src="assets/img/google.png" alt="google" style="width: 30px; height: 30px;"></a>
+                            <a href="login.html" class="btn btn-outline-primary" style="width: 100px;"><img src="assets/img/facebook.png" alt="facebook" style="width: 30px; height: 30px;"></a>
+                        </div>                    
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    
+    
+    
+    
+    
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <script src="../assets/js/sweetalert2.min.js"></script>
+    <script src="https://kit.fontawesome.com/a329084b4e.js" crossorigin="anonymous"></script>
+    
+</body>
+
+</html>
