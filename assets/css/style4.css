@@ -3,8 +3,7 @@
     margin: 0;
     box-sizing: border-box;
   }
-  
-  
+
   .row {
     background: #FFFFFF ;
     border-radius: 10px;
@@ -14,13 +13,13 @@
   .login-img {
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;  
-    max-height: 744px;
+    max-height: 746px;
     width: 100%;
   }
   
   .form-img {
-    width: 130px; 
-    height: 70px;
+    width: 110px; 
+    height: 50px;
   }
   
   .inp {
@@ -74,7 +73,7 @@
   .btn-back {
     position: absolute;
     top: 60px;
-    right: 250px;
+    right: 160px;
     color: #000; /* Ganti warna sesuai kebutuhan */
     font-size: 24px; /* Sesuaikan ukuran sesuai kebutuhan */
   }

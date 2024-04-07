@@ -1,11 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Dashboard - Analytics | Sneat - Bootstrap 5 HTML Admin Template - Pro</title>
+  <title>LinguaCourse</title>
   <!-- Favicon -->
-  <link rel="icon" type="image/x-icon" href="../assets/img/favicon/favicon.ico" />
+  <link rel="icon" type="image/x-icon" href="../assets/img/logo.jpg" />
 
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -44,22 +45,23 @@
       <!-- Menu -->
 
       <aside id="layout-menu" class="layout-menu menu-vertical menu bg-menu-theme">
-        <div class="app-brand demo">
+        <div class="app-brand demo" style="display: flex; justify-content: center; align-items: center;">
           <a href="index.html" class="app-brand-link">
             <span class="app-brand-logo align-items-xl-center demo ">
-              <img src="/assets/img/Picture1.png" style="width: 100px; height: 50px;">
+              <img src="/assets/img/logo.png" style="width: 110px; height: 60px;">
+            </span>
           </a>
           <a href="javascript:void(0);" class="layout-menu-toggle menu-link text-large ms-auto d-block d-xl-none">
             <i class="bx bx-chevron-left bx-sm align-middle"></i>
           </a>
         </div>
 
-        <div class="menu-inner-shadow"></div>
+        <!-- <div class="menu-inner-shadow"></div> -->
 
         <ul class="menu-inner py-1">
           <!-- Dashboard -->
           <li class="menu-item">
-            <a href="/user/index.html" class="menu-link">
+            <a href="index.html" class="menu-link">
               <i class="menu-icon tf-icons bx bx-home-circle"></i>
               <div data-i18n="Analytics">Beranda</div>
             </a>
@@ -96,6 +98,20 @@
               <i class='menu-icon tf-icons bx bx-log-out'></i>
               <div data-i18n="Layouts">Keluar</div>
             </a>
+          <li style="position: fixed; bottom: 0; left: 0; z-index: 999;">
+            <div class="container flex-grow-1 container-p-y" style="margin-bottom: 30px;">
+              <div class="row justify-content-center"></div>
+              <div class="card text-center mb-1" style="width: 200px; height: 100px;">
+                <!-- Menambahkan properti width dan height -->
+                <div class="card-body"
+                  style="background: #EDFFF9; box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2); border-radius: 20px;">
+                  <p class="card-text" style="text-align: left;">Tingkatkan Status Member Mu</p>
+                  <a href="#" class="btn-enter">LinguaPlus<i class="fa-solid fa-angles-right"
+                      style="margin-left: 40px; border: 2px solid blue; border-radius: 5px; width: 30px; height: 20px;"></i></a>
+                </div>
+              </div>
+            </div>
+          </li>
 
       </aside>
       <!-- / Menu -->
@@ -126,9 +142,7 @@
             <ul class="navbar-nav flex-row align-items-center ms-auto">
               <!-- Place this tag where you want the button to render. -->
               <li class="nav-item lh-1 me-3">
-                <a class="github-button" href="https://github.com/themeselection/sneat-html-admin-template-free"
-                  data-icon="octicon-star" data-size="large" data-show-count="true"
-                  aria-label="Star themeselection/sneat-html-admin-template-free on GitHub">Star</a>
+                <span>Agus</span>
               </li>
 
               <!-- User -->
@@ -196,69 +210,168 @@
         <!-- / Navbar -->
 
         <!-- Content wrapper -->
-
-        <!-- Content -->
-
-        <!-- Footer -->
-        <footer class="content-footer footer bg-footer-theme">
-            <div class="container-xxl d-flex flex-wrap justify-content-between py-2 flex-md-row flex-column">
-              <div class="mb-2 mb-md-0">
-                ©
-                <script>
-                  document.write(new Date().getFullYear());
-                </script>
-                , made with ❤️ by
-                <a href="https://themeselection.com" target="_blank" class="footer-link fw-bolder">ThemeSelection</a>
+        <div class="content-wrapper">
+          <!-- Content -->
+          <div class="container-xxl flex-grow-1 container-p-y">
+            <h2 class="mt-2"
+              style="font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;">
+              Semua Modul</h2>
+            <div class="row">
+              <div class="col-md-6 col-lg-3" >
+                <div class="card mb-3" style="border-radius: 20px;">
+                  <img class="card-img-top" src="../assets/img/image.png" alt="Card image cap">
+                  <div class="card-body">
+                    <h5 class="card-title">Modul 1</h5>
+                    <p class="card-text">Basic Speaking For Beginner</p>
+                  </div>
+                  <div class="card-footer">
+                    <div class="d-flex justify-content-between">
+                      <div>
+                        <span class="badge bg-label-primary p-2"><i class="fa-regular fa-clock"></i></span>
+                        <span class="ms-1">3j 10m</span>
+                      </div>
+                      <div>
+                        <span class="badge bg-label-primary p-2">17/17 Selesai</span>
+                      </div>
+                    </div>
+                    <div class="mt-3 text-center">
+                      <button type="button" class="btn rounded-pill btn-primary">Belajar Sekarang</button>
+                    </div>
+                  </div>
+                </div>
               </div>
-              <div>
-                <a href="https://themeselection.com/license/" class="footer-link me-4" target="_blank">License</a>
-                <a href="https://themeselection.com/" target="_blank" class="footer-link me-4">More Themes</a>
-
-                <a href="https://themeselection.com/demo/sneat-bootstrap-html-admin-template/documentation/"
-                  target="_blank" class="footer-link me-4">Documentation</a>
-
-                <a href="https://github.com/themeselection/sneat-html-admin-template-free/issues" target="_blank"
-                  class="footer-link me-4">Support</a>
+              <div class="col-md-6 col-lg-3" >
+                <div class="card mb-3" style="border-radius: 20px;">
+                  <img class="card-img-top" src="../assets/img/image.png" alt="Card image cap">
+                  <div class="card-body">
+                    <h5 class="card-title">Modul 1</h5>
+                    <p class="card-text">Basic Speaking For Beginner</p>
+                  </div>
+                  <div class="card-footer">
+                    <div class="d-flex justify-content-between">
+                      <div>
+                        <span class="badge bg-label-primary p-2"><i class="fa-regular fa-clock"></i></span>
+                        <span class="ms-1">3j 10m</span>
+                      </div>
+                      <div>
+                        <span class="badge bg-label-primary p-2">17/17 Selesai</span>
+                      </div>
+                    </div>
+                    <div class="mt-3 text-center">
+                      <button type="button" class="btn rounded-pill btn-primary">Belajar Sekarang</button>
+                    </div>
+                  </div>
+                </div>
               </div>
+              <div class="col-md-6 col-lg-3" >
+                <div class="card mb-3" style="border-radius: 20px;">
+                  <img class="card-img-top" src="../assets/img/image.png" alt="Card image cap">
+                  <div class="card-body">
+                    <h5 class="card-title">Modul 1</h5>
+                    <p class="card-text">Basic Speaking For Beginner</p>
+                  </div>
+                  <div class="card-footer">
+                    <div class="d-flex justify-content-between">
+                      <div>
+                        <span class="badge bg-label-primary p-2"><i class="fa-regular fa-clock"></i></span>
+                        <span class="ms-1">3j 10m</span>
+                      </div>
+                      <div>
+                        <span class="badge bg-label-primary p-2">17/17 Selesai</span>
+                      </div>
+                    </div>
+                    <div class="mt-3 text-center">
+                      <button type="button" class="btn rounded-pill btn-primary">Belajar Sekarang</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6 col-lg-3" >
+                <div class="card mb-3" style="border-radius: 20px;">
+                  <img class="card-img-top" src="../assets/img/image.png" alt="Card image cap">
+                  <div class="card-body">
+                    <h5 class="card-title">Modul 1</h5>
+                    <p class="card-text">Basic Speaking For Beginner</p>
+                  </div>
+                  <div class="card-footer">
+                    <div class="d-flex justify-content-between">
+                      <div>
+                        <span class="badge bg-label-primary p-2"><i class="fa-regular fa-clock"></i></span>
+                        <span class="ms-1">3j 10m</span>
+                      </div>
+                        <span class="badge bg-label-primary p-2">17/17 Selesai</span>
+                      </div>
+                    </div>
+                    <div class="mt-3 text-center">
+                      <button type="button" class="btn rounded-pill btn-primary">Belajar Sekarang</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
             </div>
-          </footer>
-          <!-- / Footer -->
 
-          <div class="content-backdrop fade"></div>
+
+            <!-- Footer -->
+            <footer class="content-footer footer bg-footer-theme">
+              <div class="container-xxl d-flex flex-wrap justify-content-between py-2 flex-md-row flex-column">
+                <div class="mb-2 mb-md-0">
+                  ©
+                  <script>
+                    document.write(new Date().getFullYear());
+                  </script>
+                  , made with ❤️ by
+                  <a href="https://themeselection.com" target="_blank" class="footer-link fw-bolder">ThemeSelection</a>
+                </div>
+                <div>
+                  <a href="https://themeselection.com/license/" class="footer-link me-4" target="_blank">License</a>
+                  <a href="https://themeselection.com/" target="_blank" class="footer-link me-4">More Themes</a>
+
+                  <a href="https://themeselection.com/demo/sneat-bootstrap-html-admin-template/documentation/"
+                    target="_blank" class="footer-link me-4">Documentation</a>
+
+                  <a href="https://github.com/themeselection/sneat-html-admin-template-free/issues" target="_blank"
+                    class="footer-link me-4">Support</a>
+                </div>
+              </div>
+            </footer>
+            <!-- / Footer -->
+
+            <div class="content-backdrop fade"></div>
+          </div>
+          <!-- Content wrapper -->
         </div>
-        <!-- Content wrapper -->
+        <!-- / Layout page -->
       </div>
-      <!-- / Layout page -->
+
+      <!-- Overlay -->
+      <div class="layout-overlay layout-menu-toggle"></div>
     </div>
+    <!-- / Layout wrapper -->
 
-    <!-- Overlay -->
-    <div class="layout-overlay layout-menu-toggle"></div>
-  </div>
-  <!-- / Layout wrapper -->
+    <!-- Core JS -->
+    <!-- build:js assets/vendor/js/core.js -->
+    <script src="../assets/vendor/libs/jquery/jquery.js"></script>
+    <script src="../assets/vendor/libs/popper/popper.js"></script>
+    <script src="../assets/vendor/js/bootstrap.js"></script>
+    <script src="../assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.js"></script>
 
-  <!-- Core JS -->
-  <!-- build:js assets/vendor/js/core.js -->
-  <script src="../assets/vendor/libs/jquery/jquery.js"></script>
-  <script src="../assets/vendor/libs/popper/popper.js"></script>
-  <script src="../assets/vendor/js/bootstrap.js"></script>
-  <script src="../assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.js"></script>
+    <script src="../assets/vendor/js/menu.js"></script>
+    <!-- endbuild -->
 
-  <script src="../assets/vendor/js/menu.js"></script>
-  <!-- endbuild -->
+    <!-- Vendors JS -->
+    <script src="../assets/vendor/libs/apex-charts/apexcharts.js"></script>
 
-  <!-- Vendors JS -->
-  <script src="../assets/vendor/libs/apex-charts/apexcharts.js"></script>
+    <!-- Main JS -->
+    <script src="../assets/js/main.js"></script>
 
-  <!-- Main JS -->
-  <script src="../assets/js/main.js"></script>
+    <!-- Page JS -->
+    <script src="../assets/js/dashboards-analytics.js"></script>
 
-  <!-- Page JS -->
-  <script src="../assets/js/dashboards-analytics.js"></script>
-
-  <!-- Font Awesome -->
-  <script src="https://kit.fontawesome.com/a329084b4e.js" crossorigin="anonymous"></script>
-  <!-- Place this tag in your head or just before your close body tag. -->
-  <script async defer src="https://buttons.github.io/buttons.js"></script>
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/a329084b4e.js" crossorigin="anonymous"></script>
+    <!-- Place this tag in your head or just before your close body tag. -->
+    <script async defer src="https://buttons.github.io/buttons.js"></script>
 </body>
 
 </html>
