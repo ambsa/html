@@ -200,16 +200,33 @@
                                         <div class="dropdown-divider"></div>
                                     </li>
                                     <li>
-                                        <a class="dropdown-item" href="/beranda.html">
-                                            <i class="bx bx-power-off me-2"></i>
-                                            <span class="align-middle">Log Out</span>
+                                        <a class="dropdown-item" href="#" onclick="confirmLogout()">
+                                          <i class="bx bx-power-off me-2"></i>
+                                          <span class="align-middle">Log Out</span>
                                         </a>
-                                    </li>
-                                </ul>
-                            </li>
-                            <!--/ User -->
-                        </ul>
-                    </div>
+                    
+                                        <!-- Bagian js untuk alert button logout -->
+                                        <script>
+                                          function confirmLogout() {
+                                            Swal.fire({
+                                              title: "Apakah Anda Yakin?",
+                                              text: "",
+                                              icon: "warning",
+                                              showCancelButton: true,
+                                              confirmButtonColor: "#3085d6",
+                                              cancelButtonColor: "#d33",
+                                              confirmButtonText: "Keluar",
+                                              cancelButtonText: "Batal"
+                                            }).then((result) => {
+                                              if (result.isConfirmed) {
+                                                // Pindah halaman pas neken keluar
+                                                window.location.href = "/beranda.html"; // halaman yang dimaksud
+                                              }
+                                            });
+                                          }
+                                        </script>
+                                      </li>
+                                    </ul>
                 </nav>
                 <!-- / Navbar -->
 
@@ -223,113 +240,114 @@
                             <h2 class="mt-2"
                                 style="font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;">
                                 Semua Topik</h2>
-                                <div class="col-md-6 col-xl-4">
-                                    <div class="card shadow-none bg-transparent border border-secondary mb-3">
-                                        <div class="card-body">
-                                            <h5 class="card-title">Secondary card title with more content</h5>
-                                            <p class="card-text" style="overflow: hidden; text-overflow: ellipsis; white-space: nowrap;">Some quick example text to build on the card title and make up. This can be expanded with more details or additional information to utilize the space more effectively.</p>
-                                        </div>
+                            <div class="col-md-6 col-xl-4">
+                                <div class="card shadow-none bg-transparent border border-secondary mb-3">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Secondary card title with more content</h5>
+                                        <p class="card-text"
+                                            style="overflow: hidden; text-overflow: ellipsis; white-space: nowrap;">Some
+                                            quick example text to build on the card title and make up. This can be
+                                            expanded with more details or additional information to utilize the space
+                                            more effectively.</p>
                                     </div>
                                 </div>
-                                <div class="col-md-6 col-xl-4">
-                                    <div class="card shadow-none bg-transparent border border-secondary mb-3">
-                                        <div class="card-body">
-                                            <h5 class="card-title">Secondary card title with more content</h5>
-                                            <p class="card-text" style="overflow: hidden; text-overflow: ellipsis; white-space: nowrap;">Some quick example text to build on the card title and make up. This can be expanded with more details or additional information to utilize the space more effectively.</p>
-                                        </div>
+                            </div>
+                            <div class="col-md-6 col-xl-4">
+                                <div class="card shadow-none bg-transparent border border-secondary mb-3">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Secondary card title with more content</h5>
+                                        <p class="card-text"
+                                            style="overflow: hidden; text-overflow: ellipsis; white-space: nowrap;">Some
+                                            quick example text to build on the card title and make up. This can be
+                                            expanded with more details or additional information to utilize the space
+                                            more effectively.</p>
                                     </div>
                                 </div>
-                                <!-- Column bagian kanan-->
-<div class="col-sm-6 col-lg-4 mb-4" style="max-height: 400px; overflow: auto;">
-    <div class="list-group">
-        <a href="#" class="list-group-item list-group-item-action">
-            <h5 class="mb-1">Secondary card title</h5>
-            <p class="mb-1">Some quick example text to build on the card title and make up.</p>
-        </a>
-        <a href="#" class="list-group-item list-group-item-action">
-            <h5 class="mb-1">Secondary card title</h5>
-            <p class="mb-1">Some quick example text to build on the card title and make up.</p>
-        </a>
-        <a href="#" class="list-group-item list-group-item-action">
-            <h5 class="mb-1">Secondary card title</h5>
-            <p class="mb-1">Some quick example text to build on the card title and make up.</p>
-        </a>
-        <a href="#" class="list-group-item list-group-item-action">
-            <h5 class="mb-1">Secondary card title</h5>
-            <p class="mb-1">Some quick example text to build on the card title and make up.</p>
-        </a>
-        <a href="#" class="list-group-item list-group-item-action">
-            <h5 class="mb-1">Secondary card title</h5>
-            <p class="mb-1">Some quick example text to build on the card title and make up.</p>
-        </a>
-        <a href="#" class="list-group-item list-group-item-action">
-            <h5 class="mb-1">Secondary card title</h5>
-            <p class="mb-1">Some quick example text to build on the card title and make up.</p>
-        </a>
-        <a href="#" class="list-group-item list-group-item-action">
-            <h5 class="mb-1">Secondary card title</h5>
-            <p class="mb-1">Some quick example text to build on the card title and make up.</p>
-        </a>
-        <a href="#" class="list-group-item list-group-item-action">
-            <h5 class="mb-1">Secondary card title</h5>
-            <p class="mb-1">Some quick example text to build on the card title and make up.</p>
-        </a>
-        <!-- nambah kebawah -->
-                        </div>
-                                
-                                
-                            <!--last -->
+                            </div>
+                            <!-- Column bagian kanan-->
+                            <div class="col-sm-6 col-lg-4 mb-4" style="max-height: 400px; overflow: auto;">
+                                <div class="list-group">
+                                    <a href="#" class="list-group-item list-group-item-action">
+                                        <h5 class="mb-1">Secondary card title</h5>
+                                        <p class="mb-1">Some quick example text to build on the card title and make up.
+                                        </p>
+                                    </a>
+                                    <a href="#" class="list-group-item list-group-item-action">
+                                        <h5 class="mb-1">Secondary card title</h5>
+                                        <p class="mb-1">Some quick example text to build on the card title and make up.
+                                        </p>
+                                    </a>
+                                    <a href="#" class="list-group-item list-group-item-action">
+                                        <h5 class="mb-1">Secondary card title</h5>
+                                        <p class="mb-1">Some quick example text to build on the card title and make up.
+                                        </p>
+                                    </a>
+                                    <a href="#" class="list-group-item list-group-item-action">
+                                        <h5 class="mb-1">Secondary card title</h5>
+                                        <p class="mb-1">Some quick example text to build on the card title and make up.
+                                        </p>
+                                    </a>
+                                    <a href="#" class="list-group-item list-group-item-action">
+                                        <h5 class="mb-1">Secondary card title</h5>
+                                        <p class="mb-1">Some quick example text to build on the card title and make up.
+                                        </p>
+                                    </a>
+                                    <a href="#" class="list-group-item list-group-item-action">
+                                        <h5 class="mb-1">Secondary card title</h5>
+                                        <p class="mb-1">Some quick example text to build on the card title and make up.
+                                        </p>
+                                    </a>
+                                    <a href="#" class="list-group-item list-group-item-action">
+                                        <h5 class="mb-1">Secondary card title</h5>
+                                        <p class="mb-1">Some quick example text to build on the card title and make up.
+                                        </p>
+                                    </a>
+                                    <a href="#" class="list-group-item list-group-item-action">
+                                        <h5 class="mb-1">Secondary card title</h5>
+                                        <p class="mb-1">Some quick example text to build on the card title and make up.
+                                        </p>
+                                    </a>
+                                    <!-- nambah kebawah -->
+                                </div>
 
-                           
-    </div>
-</div>
 
-                            
-                            <!-- last-->
+                                <!--last -->
+
+
+                            </div>
                         </div>
+
+
+                        <!-- last-->
                     </div>
-
-
-
-
-                    <!-- Footer -->
-                    <footer class="content-footer footer bg-footer-theme">
-                        <div
-                            class="container-xxl d-flex flex-wrap justify-content-between py-2 flex-md-row flex-column">
-                            <div class="mb-2 mb-md-0">
-                                ©
-                                <script>
-                                    document.write(new Date().getFullYear());
-                                </script>
-                                , made with ❤️ by
-                                <a href="https://themeselection.com" target="_blank"
-                                    class="footer-link fw-bolder">ThemeSelection</a>
-                            </div>
-                            <div>
-                                <a href="https://themeselection.com/license/" class="footer-link me-4"
-                                    target="_blank">License</a>
-                                <a href="https://themeselection.com/" target="_blank" class="footer-link me-4">More
-                                    Themes</a>
-
-                                <a href="https://themeselection.com/demo/sneat-bootstrap-html-admin-template/documentation/"
-                                    target="_blank" class="footer-link me-4">Documentation</a>
-
-                                <a href="https://github.com/themeselection/sneat-html-admin-template-free/issues"
-                                    target="_blank" class="footer-link me-4">Support</a>
-                            </div>
-                        </div>
-                    </footer>
-                    <!-- / Footer -->
-
-                    <div class="content-backdrop fade"></div>
                 </div>
-                <!-- Content wrapper -->
-            </div>
-            <!-- / Layout page -->
-        </div>
 
-        <!-- Overlay -->
-        <div class="layout-overlay layout-menu-toggle"></div>
+
+
+
+                <!-- Footer -->
+                <!-- Footer -->
+                <footer class="content-footer footer bg-footer-theme d-flex justify-content-center align-items-center">
+                    <div>
+                        ©
+                        <script>
+                            document.write(new Date().getFullYear());
+                        </script>
+                        , made with kelompok 10
+                    </div>
+                </footer>
+                <!-- / Footer -->
+                <!-- / Footer -->
+
+                <div class="content-backdrop fade"></div>
+            </div>
+            <!-- Content wrapper -->
+        </div>
+        <!-- / Layout page -->
+    </div>
+
+    <!-- Overlay -->
+    <div class="layout-overlay layout-menu-toggle"></div>
     </div>
     <!-- / Layout wrapper -->
 
@@ -356,6 +374,8 @@
     <script src="https://kit.fontawesome.com/a329084b4e.js" crossorigin="anonymous"></script>
     <!-- Place this tag in your head or just before your close body tag. -->
     <script async defer src="https://buttons.github.io/buttons.js"></script>
+    <!-- sweet alert -->
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </body>
 
 </html>
