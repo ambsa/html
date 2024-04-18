@@ -78,6 +78,19 @@ a{
   color: #000; /* Ganti warna sesuai kebutuhan */
   font-size: 24px; /* Sesuaikan ukuran sesuai kebutuhan */
 }
+.btn-back {
+  display: inline-block;
+}
+
+.fa-xmark {
+  font-size: 24px; /* Sesuaikan ukuran ikon sesuai kebutuhan */
+  transition: transform 0.3s ease;
+}
+
+.btn-back:hover .fa-xmark {
+  transform: rotate(180deg);
+}
+
 
 
 
