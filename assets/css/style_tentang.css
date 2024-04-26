@@ -1,0 +1,183 @@
+.card-container {
+    display: flex;
+    justify-content: left;
+    margin-top: 20px;
+    margin-left: 30px; /* Bagian Container diawal beranda */
+}
+.navbar-btns button {
+    margin-right: 5px; /* */
+}
+.card {
+margin-bottom: 10px; /* */
+}
+.icon-large {
+font-size: 30px; /* Penyesuaian icon nya */
+}
+@media (max-width: 1024px) {
+.hero-header .col-lg-6 {
+text-align: center;
+}
+.hero-header .col-lg-6 img {
+margin-top: 20px; /* */
+}
+}
+
+@media (max-width: 768px) {
+.hero-header .col-lg-6 img {
+width: 70%; /* */
+}
+}
+@media(max-width:500){
+
+}
+.small-font {
+font-size: 0.75rem; /* */
+}
+#scrollToTopBtn {
+display: none;
+position: fixed;
+bottom: 20px;
+right: 20px;
+z-index: 99;
+background-color: transparent;
+color: #605DEC;
+border: 2px solid #605DEC; /* Mengubah ke bentuk outline dengan ketebalan garis 2px */
+border-radius: 50%;
+cursor: pointer;
+padding: 15px;
+font-size: 16px;
+transition: opacity 0.3s, visibility 0.3s;
+}
+
+#scrollToTopBtn:hover {
+background-color: #605DEC; /* Warna background saat di hover */
+color: white; /* Warna teks saat di hover */
+}
+.navbar-nav {
+margin-right: 20px; /* Atur jarak kanan */
+}
+
+.navbar-nav .nav-item {
+margin-right: 20px; /* Atur jarak antara setiap item */
+}
+
+/* .navbar{
+background-color: #F2F0EB;
+height: 80px;
+margin: 20px;
+border-radius: 16px;
+padding: 0.5rem;
+}  */
+
+
+/* Part of Content 1 */
+h1, h4 {
+    text-align: center;
+}
+
+.container-fluid.hero-header {
+    position: relative;
+    margin-top: 60px;
+}
+
+.container-fluid.hero-header .container {
+    position: relative;
+}
+
+.container-fluid.hero-header img {
+    position: absolute;
+    top: 0;
+}
+
+.container-fluid.hero-header img:first-child {
+    left: 0;
+}
+
+.container-fluid.hero-header img:last-child {
+    right: 0;
+}
+
+h4 {
+    margin-top: 50px;
+}
+
+.small-img {
+    width: 40px; /* setel lebar */
+    height: auto; /* Setel tinggi */
+    margin-right: 60px;
+}
+@media (max-width: 768px) {
+    .container-fluid.hero-header {
+        position: relative;
+    }
+
+    .small-img {
+        position: absolute;
+        z-index: -1; /* Mengatur z-index ke nilai yang lebih rendah */
+    }
+    
+    /* Aturan media query di sini */   
+
+}
+
+/* end */
+
+/* Part of Content 2 */
+.container.mb-5 {
+    margin-top: 20%;
+}
+
+/* content 4 */
+/* Part of Content 2 */
+.container.mb-5.content-4 {
+    margin-top: 10%;
+}
+
+/* part of content 5 */
+  
+  
+  .card {    
+    margin: 10px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .card-img {
+    width: 50%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    margin-top: 10px;
+    
+  }
+  
+  .card-content {
+    padding: 10px;
+    text-align: center;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .container {
+      flex-direction: column;
+    }
+  }
+
+  /* end */
+  
+
+
+
+
+
+
+
+/* .navbar{
+background-color: #F2F0EB;
+height: 80px;
+margin: 20px;
+border-radius: 16px;
+padding: 0.5rem;
+} */
+

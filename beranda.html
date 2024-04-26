@@ -1,106 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>   
+
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Beranda</title>
     <!-- Favicon -->
-  <link rel="icon" type="image/x-icon" href="./assets/img/logo.jpg" />
+    <link rel="icon" type="image/x-icon" href="./assets/img/logo.jpg" />
 
-  <!-- Bootstrap -->
+    <!-- Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <style>
-               
-        .card-container {
-            display: flex;
-            justify-content: left;
-            margin-top: 20px;
-            margin-left: 30px; /* Bagian Container diawal beranda */
-        }
-        .navbar-btns button {
-            margin-right: 5px; /* */
-        }
-        .card {
-    margin-bottom: 10px; /* */
-        }
-        .icon-large {
-    font-size: 30px; /* Penyesuaian icon nya */
-}
-@media (max-width: 992px) {
-    .hero-header .col-lg-6 {
-        text-align: center;
-    }
-    .hero-header .col-lg-6 img {
-        margin-top: 20px; /* */
-    }
-}
 
-@media (max-width: 768px) {
-    .hero-header .col-lg-6 img {
-        width: 70%; /* */
-    }
-}
-.small-font {
-    font-size: 0.75rem; /* */
-}
-#scrollToTopBtn {
-    display: none;
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    z-index: 99;
-    background-color: transparent;
-    color: #605DEC;
-    border: 2px solid #605DEC; /* Mengubah ke bentuk outline dengan ketebalan garis 2px */
-    border-radius: 50%;
-    cursor: pointer;
-    padding: 15px;
-    font-size: 16px;
-    transition: opacity 0.3s, visibility 0.3s;
-}
-
-#scrollToTopBtn:hover {
-    background-color: #605DEC; /* Warna background saat di hover */
-    color: white; /* Warna teks saat di hover */
-}
-
-        
-     </style>
+    <!-- css internal -->
+    <link rel="stylesheet" href="/assets/css/style_beranda.css  ">
 </head>
+
 <body>
     <!-- Bagian Navbar -->
-<div>
-    <nav class="navbar navbar-expand-lg navbar-light">
-        <div class="container-fluid justify-content-end">
-            <a class="navbar-brand" href="beranda.html">
-                <img src="assets/img/logo.png" style="width: 110px; height: 60px;" alt="Logo">
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item ">
-                        <a class="nav-link active font-weight-bold" aria-current="page" href="beranda.html">Beranda</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="tentang.html">Tentang Kami</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="harga.html">Harga</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Belajar</a>
-                    </li>
-                </ul>
-                <div class="navbar-btns">
-                    <a href="login.html" class="btn btn-outline-primary">Masuk</a>
-                    <a href="registrasi.html" class="btn btn-primary">Daftar</a>
+    <div>
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="beranda.html">
+                    <img src="assets/img/logo.png" style="width: 110px; height: 60px;" alt="Logo">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
+                    <ul class="navbar-nav flex-grow-1 pe-3">
+                        <li class="nav-item ">
+                            <a class="nav-link active font-weight-bold" aria-current="page"
+                                href="beranda.html">Beranda</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="tentang.html">Tentang Kami</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="blog.html">Blog</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="belajar.html">Belajar</a>
+                        </li>
+                    </ul>
+                    <div class="navbar-btns">
+                        <a href="login.html" class="btn btn-outline-primary">Masuk</a>
+                        <a href="registrasi.html" class="btn btn-primary" style="margin-right: 10px;">Daftar</a>
+                    </div>
                 </div>
             </div>
-        </div>
-    </nav>
-</div>
+        </nav>
+    </div>
 
 
     <!-- Bagian isi konten -->
@@ -108,12 +59,17 @@
         <div class="container">
             <div class="row g-5 align-items-center">
                 <div class="col-lg-6 order-lg-1 text-center text-lg-start">
-                    <h1 class="display-4 text-black animated slideInRight"><strong>Belajar Bahasa Asing</strong> <span class="fw-light text-dark"><strong>Semudah Belajar</strong></span> <strong>Bahasa Mu Sendiri</strong></h1>
-                    <p class="text-black mb-4 animated slideInRight" style="text-align: justify;">Bersama LinguaLearn Wujudkan Impian Mu Belajar Bahasa Apapun
-                        Sesuai Keinginan Mu, Bersama Dengan Penutur Asli Dan Struktur Kurikulum 
+                    <h1 class="display-4 text-black animated slideInRight"><strong>Belajar Bahasa Asing</strong> <span
+                            class="fw-light text-dark"><strong>Semudah Belajar</strong></span> <strong>Bahasa Mu
+                            Sendiri</strong></h1>
+                    <p class="text-black mb-4 animated slideInRight" style="text-align: justify;">Bersama LinguaLearn
+                        Wujudkan Impian Mu Belajar Bahasa Apapun
+                        Sesuai Keinginan Mu, Bersama Dengan Penutur Asli Dan Struktur Kurikulum
                         Yang Teruji Oleh Ahli Bahasa Seluruh Dunia! </p>
-                    <button onclick="location.href=''" type="button" class="btn btn-primary" style="margin-right: 10px;">Mulai Belajar Sekarang</button>
-                    <button onclick="location.href=''" type="button" class="btn btn-outline-primary">Dapatkan Percobaan Kelas Gratis</button>
+                    <div class="d-grid gap-2 d-lg-flex justify-content-lg-start">
+                        <button onclick="location.href=''" type="button" class="btn btn-primary me-lg-2">Mulai Belajar Sekarang</button>
+                        <button onclick="location.href=''" type="button" class="btn btn-outline-primary">Dapatkan Percobaan Kelas Gratis</button>
+                    </div>
                 </div>
                 <div class="col-lg-6 order-lg-2">
                     <img class="img-fluid animated pulse infinite" src="assets/img/Picture3.png" alt="">
@@ -121,168 +77,217 @@
             </div>
         </div>
     </div>
-        
     
-<!-- Isi konten 2 -->
+    
+
+
+    <!-- Isi konten 2 -->
     <div class="container mb-5" style="margin-top: 70px;">
         <div class="row align-items-center">
             <div class="col">
                 <p class="text-center">Fitur LinguaLearn</p>
-                <h1 class="display-5 text-black text-center"><strong>Modul Yang Berstandar Internasional</strong> <span class="fw-light text-dark"><strong>Dan Lingkungan Belajar</strong></span> <strong>Yang Mendukung</strong></h1>
+                <h1 class="display-5 text-black text-center"><strong>Modul Yang Berstandar Internasional</strong> <span
+                        class="fw-light text-dark"><strong>Dan Lingkungan Belajar</strong></span> <strong>Yang
+                        Mendukung</strong></h1>
             </div>
         </div>
     </div>
-    
+
+    <!-- Konten 3 -->
     <div class="container-fluid hero-header mb-5">
         <div class="container">
-            <div class="row align-items-center justify-content-center"><!-- Menggunakan justify-content-center untuk mengatur agar konten menjadi terpusat secara horizontal -->
-                <div class="col-lg-4 col-md-6 col-sm-12 mb-4"><!-- Menambahkan kolom responsif -->
-                    <div class="card mx-auto" style="width: 18rem;"> <!-- Menambahkan kelas mx-auto untuk memusatkan secara horizontal -->
-                        <div class="card-body py-4"> <!-- Menambahkan kelas py-4 untuk memberikan padding di atas dan bawah -->
+            <div class="row align-items-center justify-content-center">
+                <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                    <div class="card card-modul mx-auto" style="width: 18rem;">
+                        <div class="card-body py-4">
                             <i class="fa-solid fa-desktop"></i><span style="margin-left: 10px;">Modul Pembelajaran</span>
                             <p class="card-text" style="margin-top: 30px;">Kami Memiliki Modul Pembelajaran Yang Mengedepankan Metode Belajar Visual, Auditori, Dan Kinestetik.</p>
-                            <a href="#" class="card-link">Pelajari Lebih Lanjut ></a>
+                            <a href="#" id="openModalBtn1" class="card-link">Pelajari Lebih Lanjut ></a>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-6 col-sm-12 mb-4"><!-- responsif -->
-                    <div class="card mx-auto" style="width: 18rem;">
+                <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                    <div class="card card-modul mx-auto" style="width: 18rem;">
                         <div class="card-body py-4">
                             <i class="fa-solid fa-laptop"></i><span style="margin-left: 10px;">Penutur Asli</span>
                             <p class="card-text" style="margin-top: 30px;">Membangun Lingkungan Belajar Dengan Penutur Asli Bahasa Yang Kamu Pelajari Untuk Memudahkan Dalam Proses Belajar.</p>
-                            <a href="#" class="card-link">Pelajari Lebih Lanjut ></a>
+                            <a href="#" id="openModalBtn2" class="card-link">Pelajari Lebih Lanjut ></a>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-6 col-sm-12 mb-4"><!-- responsif -->
-                    <div class="card mx-auto" style="width: 18rem;">
+                <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                    <div class="card card-modul mx-auto" style="width: 18rem;">
                         <div class="card-body py-4">
                             <i class="fa-solid fa-chart-line"></i><span style="margin-left: 10px;">Forum Diskusi Global</span>
                             <p class="card-text" style="margin-top: 30px;">Dengan Menjangkau Pengguna Global Dan Menyatukannya Dalam Forum Diskusi Sehingga Dapat Belajar Bersama Pengguna Lain.</p>
-                            <a href="#" class="card-link">Pelajari Lebih Lanjut ></a>
+                            <a href="#" id="openModalBtn3" class="card-link">Pelajari Lebih Lanjut ></a>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    
+    <!-- Modal -->
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div class="modal-body">
+                <!-- Konten modal di sini -->
+                <h2>Judul Modal</h2>
+                <p>Isi konten modal Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum placeat impedit voluptas ipsum libero? Vel quae tempora nobis expedita debitis dolorum eveniet cum dolor laboriosam qui saepe quas, dicta quisquam.</p>
+                <p>Isi konten modal Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum placeat impedit voluptas ipsum libero? Vel quae tempora nobis expedita debitis dolorum eveniet cum dolor laboriosam qui saepe quas, dicta quisquam.</p>
+                <p>Isi konten modal Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum placeat impedit voluptas ipsum libero? Vel quae tempora nobis expedita debitis dolorum eveniet cum dolor laboriosam qui saepe quas, dicta quisquam.</p>
+                <!-- Tambahkan lebih banyak konten di sini untuk mencoba guliran -->
+            </div>
+        </div>
+    </div>
+    <!-- end -->
     <div class="container mb-5" style="margin-top: 50px;">
         <div class="row align-items-center">
             <p class="text-center">Metode Belajar LinguaLearn</p>
-            <h1 class="display-4 text-black text-center"><strong>Menjadikan Pembelajaran</strong> <span class="fw-light text-dark"><strong> Yang Menarik Dan Efisien </strong></span> <strong>  Adalah Tujuan Kami</strong></h1>
+            <h1 class="display-4 text-black text-center"><strong>Menjadikan Pembelajaran</strong> <span
+                    class="fw-light text-dark"><strong> Yang Menarik Dan Efisien </strong></span> <strong> Adalah Tujuan
+                    Kami</strong></h1>
         </div>
-    </div> 
+    </div>
     <div class="container-fluid hero-header mb-5">
         <div class="container">
             <div class="row g-4 align-items-center">
                 <div class="col-lg-6">
                     <div class="row">
                         <div class="col-lg-12 mb-3 mb-lg-0" style="display: flex; align-items: center; padding: 10px;">
-                            <img src="assets/img/gambar1.png" alt="deskripsi 1" style="width: 70px; height: auto; margin-right: 20px;">
-                            <span style="text-align: left; font-size: 20px;">Kami Menggunakan Metode Belajar Yang Sesuai Dengan Gaya Belajar Peserta</span>
-                        </div>                        
-                        
-                        <div class="col-lg-12 mb-3 mb-lg-0" style="display: flex; align-items: center; padding: 10px;">
-                            <img src="assets/img/icon2.png" alt="deskripsi 2" style="width: 70px; height: auto; margin-right: 20px;">
-                            <span style="text-align: left; font-size: 20px;">Modul Yang Disesuaikan Dengan Kemampuan Peserta</span>
+                            <img src="assets/img/gambar1.png" alt="deskripsi 1"
+                                style="width: 70px; height: auto; margin-right: 20px;">
+                            <span style="text-align: left; font-size: 20px;">Kami Menggunakan Metode Belajar Yang Sesuai
+                                Dengan Gaya Belajar Peserta</span>
                         </div>
-                        
+
                         <div class="col-lg-12 mb-3 mb-lg-0" style="display: flex; align-items: center; padding: 10px;">
-                            <img src="assets/img/icon3.png" alt="deskripsi 3" style="width: 70px; height: auto; margin-right: 20px;">
-                            <span style="text-align: left; font-size: 20px;">Praktek Dan Implementasi Pembelajaran Langsung</span>
+                            <img src="assets/img/icon2.png" alt="deskripsi 2"
+                                style="width: 70px; height: auto; margin-right: 20px;">
+                            <span style="text-align: left; font-size: 20px;">Modul Yang Disesuaikan Dengan Kemampuan
+                                Peserta</span>
                         </div>
-                        
+
                         <div class="col-lg-12 mb-3 mb-lg-0" style="display: flex; align-items: center; padding: 10px;">
-                            <img src="assets/img/icon4.png" alt="deskripsi 4" style="width: 70px; height: auto; margin-right: 20px;">
-                            <span style="text-align: left; font-size: 20px;">Lingkungan Yang Membuat Seru Dan Tidak Terasa Membosankan</span>
+                            <img src="assets/img/icon3.png" alt="deskripsi 3"
+                                style="width: 70px; height: auto; margin-right: 20px;">
+                            <span style="text-align: left; font-size: 20px;">Praktek Dan Implementasi Pembelajaran
+                                Langsung</span>
+                        </div>
+
+                        <div class="col-lg-12 mb-3 mb-lg-0" style="display: flex; align-items: center; padding: 10px;">
+                            <img src="assets/img/icon4.png" alt="deskripsi 4"
+                                style="width: 70px; height: auto; margin-right: 20px;">
+                            <span style="text-align: left; font-size: 20px;">Lingkungan Yang Membuat Seru Dan Tidak
+                                Terasa Membosankan</span>
                         </div>
                     </div>
-                    
+
                 </div>
                 <div class="col-lg-6">
                     <div class="row justify-content-center justify-content-lg-end">
                         <div class="col-lg-6 align-self-center">
-                            <img class="img-fluid animated pulse infinite" src="assets/img/Picture4.png" alt="gambar orang">
+                            <img class="img-fluid animated pulse infinite" src="assets/img/Picture4.png"
+                                alt="gambar orang">
                         </div>
                     </div>
-                </div>                
+                </div>
             </div>
         </div>
     </div>
-    
+
     <div class="container mb-5" style="margin-top: 50px;">
         <div class="row align-items-center">
             <p class="text-center">Penutur Asli LinguaLearn</p>
-            <h1 class="display-5 text-black text-center"><strong>Mari Berkenalan</strong> <span class="fw-light text-dark"><strong> Dengan penutur Asli Kami </strong></span></h1>
+            <h1 class="display-5 text-black text-center"><strong>Mari Berkenalan</strong> <span
+                    class="fw-light text-dark"><strong> Dengan penutur Asli Kami </strong></span></h1>
         </div>
     </div>
-    
+
     <div class="container-fluid hero-header mb-5">
         <div class="container">
             <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-5 align-items-center justify-content-center">
                 <div class="col text-center">
-                    <div class="card custom-card">
-                        <div class="card-body py-4 text-center">
-                            <img src="assets/img/penutur1.png" alt="penutur1" class="mx-auto d-block" width="100px" height="100px">
+                    <div class="card custom-card" style="border-radius: 10px;">
+                        <div class="card-body py-4 text-center" >
+                            <img src="assets/img/penutur1.png" alt="penutur1" class="mx-auto d-block" width="100px"
+                                height="100px">
                             <h1 class="fs-6 mt-3">Theresa Webb</h1>
                             <h2 class="fs-7 small-font">Penutur Bahasa Somalia</h2>
                             <p class="card-text mt-3">Telah menjadi pengajar bahasa selama 12 tahun</p>
-                            <a href="https://twitter.com/login" class="card-link"><i class="fab fa-twitter icon-large"></i></a>
-                            <a href="https://www.linkedin.com/login/in" class="card-link ms-2"><i class="fab fa-linkedin icon-large"></i></a>
+                            <a href="https://twitter.com/login" class="card-link"><i
+                                    class="fab fa-twitter icon-large"></i></a>
+                            <a href="https://www.linkedin.com/login/in" class="card-link ms-2"><i
+                                    class="fab fa-linkedin icon-large"></i></a>
                         </div>
                     </div>
                 </div>
                 <div class="col text-center">
-                    <div class="card custom-card">
+                    <div class="card custom-card" style="border-radius: 10px;">
                         <div class="card-body py-4 text-center">
-                            <img src="assets/img/penutur2.png" alt="penutur2" class="mx-auto d-block" width="100px" height="100px">
+                            <img src="assets/img/penutur2.png" alt="penutur2" class="mx-auto d-block" width="100px"
+                                height="100px">
                             <h1 class="fs-6 mt-3">Theresa Webb</h1>
                             <h2 class="fs-7 small-font">Penutur Bahasa Somalia</h2>
                             <p class="card-text mt-3">Telah menjadi pengajar bahasa selama 12 tahun</p>
-                            <a href="https://twitter.com/login" class="card-link"><i class="fab fa-twitter icon-large"></i></a>
-                            <a href="https://www.linkedin.com/login/in" class="card-link ms-2"><i class="fab fa-linkedin icon-large"></i></a>
+                            <a href="https://twitter.com/login" class="card-link"><i
+                                    class="fab fa-twitter icon-large"></i></a>
+                            <a href="https://www.linkedin.com/login/in" class="card-link ms-2"><i
+                                    class="fab fa-linkedin icon-large"></i></a>
                         </div>
                     </div>
                 </div>
                 <div class="col text-center">
-                    <div class="card custom-card">
+                    <div class="card custom-card" style="border-radius: 10px;">
                         <div class="card-body py-4 text-center">
-                            <img src="assets/img/penutur3.png" alt="penutur3" class="mx-auto d-block" width="100px" height="100px">
+                            <img src="assets/img/penutur3.png" alt="penutur3" class="mx-auto d-block" width="100px"
+                                height="100px">
                             <h1 class="fs-6 mt-3">Theresa Webb</h1>
                             <h2 class="fs-7 small-font">Penutur Bahasa Somalia</h2>
                             <p class="card-text mt-3">Telah menjadi pengajar bahasa selama 12 tahun</p>
-                            <a href="https://twitter.com/login" class="card-link"><i class="fab fa-twitter icon-large"></i></a>
-                            <a href="https://www.linkedin.com/login/in" class="card-link ms-2"><i class="fab fa-linkedin icon-large"></i></a>
+                            <a href="https://twitter.com/login" class="card-link"><i
+                                    class="fab fa-twitter icon-large"></i></a>
+                            <a href="https://www.linkedin.com/login/in" class="card-link ms-2"><i
+                                    class="fab fa-linkedin icon-large"></i></a>
                         </div>
                     </div>
                 </div>
                 <div class="col text-center">
-                    <div class="card custom-card">
+                    <div class="card custom-card" style="border-radius: 10px;">
                         <div class="card-body py-4 text-center">
-                            <img src="assets/img/penutur4.png" alt="penutur4" class="mx-auto d-block" width="100px" height="100px">
+                            <img src="assets/img/penutur4.png" alt="penutur4" class="mx-auto d-block" width="100px"
+                                height="100px">
                             <h1 class="fs-6 mt-3">Theresa Webb</h1>
                             <h2 class="fs-7 small-font">Penutur Bahasa Somalia</h2>
                             <p class="card-text mt-3">Telah menjadi pengajar bahasa selama 12 tahun</p>
-                            <a href="https://twitter.com/login" class="card-link"><i class="fab fa-twitter icon-large"></i></a>
-                            <a href="https://www.linkedin.com/login/in" class="card-link ms-2"><i class="fab fa-linkedin icon-large"></i></a>
+                            <a href="https://twitter.com/login" class="card-link"><i
+                                    class="fab fa-twitter icon-large"></i></a>
+                            <a href="https://www.linkedin.com/login/in" class="card-link ms-2"><i
+                                    class="fab fa-linkedin icon-large"></i></a>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    
+
     <div class="container-fluid" style="margin-top: 50px; background-color: #EDFFF9; min-height: 30vh; ">
-        <div class="row align-items-center justify-content-center" style="align-items: center; justify-content: center;"> <!-- Menggunakan classes align-items-center dan justify-content-center -->
+        <div class="row align-items-center justify-content-center"
+            style="align-items: center; justify-content: center;">
+            <!-- Menggunakan classes align-items-center dan justify-content-center -->
             <!-- Gambar di sisi kiri -->
             <div class="col-md-2 col-4 text-center">
                 <img class="image-fluid" src="assets/img/hiasan1.png" alt="Gambar Kiri" style="max-width: 50%;">
             </div>
-            <div class="col-md-8 col-12 text-center"> <!-- Menggunakan col dengan lebar md-8 untuk membuat row lebih kecil -->
-                <h1 class="display-5 text-black"><strong>Mari Mulai Belajar </strong><span class="fw-light text-dark"><strong> Bahasa Apapun Yang Kamu Mau</strong></span><span class="fw-light text-dark"><strong> Bersama Kami</strong></span></h1>
+            <div class="col-md-8 col-12 text-center">
+                <!-- Menggunakan col dengan lebar md-8 untuk membuat row lebih kecil -->
+                <h1 class="display-5 text-black"><strong>Mari Mulai Belajar </strong><span
+                        class="fw-light text-dark"><strong> Bahasa Apapun Yang Kamu Mau</strong></span><span
+                        class="fw-light text-dark"><strong> Bersama Kami</strong></span></h1>
                 <div class="mt-4">
-                    <button class="btn btn-primary btn-md" style="background-color: #605DEC; color: white;">Hubungi Kami Untuk Lebih Lanjut</button>
+                    <button class="btn btn-primary btn-md" style="background-color: #605DEC; color: white;">Hubungi Kami
+                        Untuk Lebih Lanjut</button>
                 </div>
             </div>
             <!-- Gambar di sisi kanan -->
@@ -292,49 +297,17 @@
         </div>
     </div>
 
-    <button onclick="scrollToTop()" id="scrollToTopBtn" title="Go to top"  class="btn rounded-pill btn-icon btn-outline-secondary">
+    <button onclick="scrollToTop()" id="scrollToTopBtn" title="Go to top"
+        class="btn rounded-pill btn-icon btn-outline-secondary">
         <span><i class="fa-solid fa-arrow-up"></i></span>
-      </button>
+    </button>
     <script>
-        // Fungsi untuk mengarahkan halaman ke atas
-        function scrollToTop() {
-            // Mendapatkan elemen <body>
-            const body = document.body;
-            // Mendapatkan elemen <html>
-            const html = document.documentElement;
-            
-            // Menggunakan animasi scroll smooth (opsional)
-            body.scrollTo({
-                top: 0,
-                behavior: 'smooth'
-            });
-            html.scrollTo({
-                top: 0,
-                behavior: 'smooth'
-            });
-        }
-    
-        // Memeriksa posisi scroll untuk menampilkan tombol
-        window.onscroll = function() {
-            scrollFunction();
-        };
-    
-        function scrollFunction() {
-            const scrollToTopBtn = document.getElementById("scrollToTopBtn");
-    
-            // Jika pengguna telah melakukan scroll lebih dari 20 piksel dari bagian atas halaman, tombol akan ditampilkan
-            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-                scrollToTopBtn.style.display = "block";
-            } else {
-                // Jika belum, tombol akan disembunyikan
-                scrollToTopBtn.style.display = "none";
-            }
-        }
+      
     </script>
-    
 
-    
-    
+
+
+
 
     <div class="container-fluid" style="margin-top: 50px; background-color: #46346A; min-height: 30vh;">
         <footer class="container py-5">
@@ -342,36 +315,51 @@
                 <div class="col-12 col-md-3 mb-3">
                     <h5 style="color: white;">Section</h5>
                     <ul class="nav flex-column">
-                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-light" style="color: white;">Home</a></li>
-                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-light" style="color: white;">Features</a></li>
-                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-light" style="color: white;">Pricing</a></li>
-                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-light" style="color: white;">FAQs</a></li>
-                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-light" style="color: white;">About</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-light"
+                                style="color: white;">Home</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-light"
+                                style="color: white;">Features</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-light"
+                                style="color: white;">Pricing</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-light"
+                                style="color: white;">FAQs</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-light"
+                                style="color: white;">About</a></li>
                     </ul>
                 </div>
-    
+
                 <div class="col-12 col-md-3 mb-3">
                     <h5 style="color: white;">Section</h5>
                     <ul class="nav flex-column">
-                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-light" style="color: white;">Home</a></li>
-                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-light" style="color: white;">Features</a></li>
-                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-light" style="color: white;">Pricing</a></li>
-                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-light" style="color: white;">FAQs</a></li>
-                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-light" style="color: white;">About</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-light"
+                                style="color: white;">Home</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-light"
+                                style="color: white;">Features</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-light"
+                                style="color: white;">Pricing</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-light"
+                                style="color: white;">FAQs</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-light"
+                                style="color: white;">About</a></li>
                     </ul>
                 </div>
-    
+
                 <div class="col-12 col-md-3 mb-3">
                     <h5 style="color: white;">Section</h5>
                     <ul class="nav flex-column">
-                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-light" style="color: white;">Home</a></li>
-                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-light" style="color: white;">Features</a></li>
-                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-light" style="color: white;">Pricing</a></li>
-                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-light" style="color: white;">FAQs</a></li>
-                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-light" style="color: white;">About</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-light"
+                                style="color: white;">Home</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-light"
+                                style="color: white;">Features</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-light"
+                                style="color: white;">Pricing</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-light"
+                                style="color: white;">FAQs</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-light"
+                                style="color: white;">About</a></li>
                     </ul>
                 </div>
-    
+
                 <div class="col-12 col-md-3 mb-3">
                     <h5 style="color: white;">Subscribe to our newsletter</h5>
                     <p style="color: white;">Monthly digest of what's new and exciting from us.</p>
@@ -382,20 +370,34 @@
                     </form>
                 </div>
             </div>
-    
+
             <div class="d-flex flex-column flex-md-row justify-content-between py-2 my-2 border-top text-center">
                 <p class="mx-auto" style="color: white;">&copy; 2024 Company, Inc. All rights reserved.</p>
                 <ul class="list-unstyled d-flex">
-                    <li class="ms-3"><a class="link-body-emphasis" href="#" style="color: white;"><svg class="bi" width="24" height="24"><use xlink:href="#twitter"/></svg></a></li>
-                    <li class="ms-3"><a class="link-body-emphasis" href="#" style="color: white;"><svg class="bi" width="24" height="24"><use xlink:href="#instagram"/></svg></a></li>
-                    <li class="ms-3"><a class="link-body-emphasis" href="#" style="color: white;"><svg class="bi" width="24" height="24"><use xlink:href="#facebook"/></svg></a></li>
+                    <li class="ms-3"><a class="link-body-emphasis" href="#" style="color: white;"><svg class="bi"
+                                width="24" height="24">
+                                <use xlink:href="#twitter" />
+                            </svg></a></li>
+                    <li class="ms-3"><a class="link-body-emphasis" href="#" style="color: white;"><svg class="bi"
+                                width="24" height="24">
+                                <use xlink:href="#instagram" />
+                            </svg></a></li>
+                    <li class="ms-3"><a class="link-body-emphasis" href="#" style="color: white;"><svg class="bi"
+                                width="24" height="24">
+                                <use xlink:href="#facebook" />
+                            </svg></a></li>
                 </ul>
             </div>
         </footer>
     </div>
-    
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/a329084b4e.js" crossorigin="anonymous"></script>
-    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="/assets/js/beranda.js"></script>
+
+
 </body>
 </html>

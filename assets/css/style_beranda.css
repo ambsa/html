@@ -1,0 +1,144 @@
+.card-container {
+    display: flex;
+    justify-content: left;
+    margin-top: 20px;
+    margin-left: 30px;
+    /* Bagian Container diawal beranda */
+}
+
+.navbar-btns button {
+    margin-right: 5px;
+    /* */
+}
+
+.card {
+    margin-bottom: 10px;
+    /* */
+}
+
+.icon-large {
+    font-size: 30px;
+    /* Penyesuaian icon nya */
+}
+
+@media (max-width: 1024px) {
+    .hero-header .col-lg-6 {
+        text-align: center;
+    }
+
+    .hero-header .col-lg-6 img {
+        margin-top: 20px;
+        /* */
+    }
+}
+
+@media (max-width: 768px) {
+    .hero-header .col-lg-6 img {
+        width: 70%;
+        /* */
+    }
+}
+
+@media(max-width:500) {}
+
+.small-font {
+    font-size: 0.75rem;
+    /* */
+}
+
+#scrollToTopBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 99;
+    background-color: transparent;
+    color: #605DEC;
+    border: 2px solid #605DEC;
+    /* Mengubah ke bentuk outline dengan ketebalan garis 2px */
+    border-radius: 50%;
+    cursor: pointer;
+    padding: 15px;
+    font-size: 16px;
+    transition: opacity 0.3s, visibility 0.3s;
+}
+
+#scrollToTopBtn:hover {
+    background-color: #605DEC;
+    /* Warna background saat di hover */
+    color: white;
+    /* Warna teks saat di hover */
+}
+
+.navbar-nav {
+    margin-right: 20px;
+    /* Atur jarak kanan */
+}
+
+.navbar-nav .nav-item {
+    margin-right: 20px;
+    /* Atur jarak antara setiap item */
+}
+
+/* .navbar{
+background-color: #F2F0EB;
+height: 80px;
+margin: 20px;
+border-radius: 16px;
+padding: 0.5rem;
+} */
+.card{
+box-shadow: 2px 3px 4px;
+}
+.card.card-modul:hover{
+background-color: #28a745; /* Warna hijau saat hover */
+transition: background-color 0.3s ease; /* Transisi halus */
+cursor: pointer; /* Mengubah kursor menjadi tanda tangan saat dihover */
+transform: translateY(-5px);
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Menambahkan bayangan */
+cursor: pointer; /* Mengubah ikon kursor saat dihover */
+}
+/* modal scrolled */
+/* Style untuk modal */
+.modal {
+    display: none; /* Modal disembunyikan secara default */
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.5);
+  }
+  
+  /* Style untuk konten modal */
+  /* Style untuk konten modal */
+.modal-content {
+    display: flex;
+    flex-direction: column;
+    background-color: #fefefe;
+    margin: 15% auto; /* Menengahkan modal secara vertikal */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 600px;
+  }
+  
+  /* Style untuk tombol tutup */
+  .close {
+    align-self: flex-end; /* Menempatkan tombol tutup di kanan */
+    color: #aaa;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+
+  /* Style untuk konten modal yang dapat digulir */
+  .modal-body {
+    max-height: 300px; /* Atur tinggi maksimum konten yang dapat digulir */
+    overflow-y: auto; /* Aktifkan penampilan gulir jika konten melebihi ketinggian maksimum */
+  }
+  
+  /* end */
