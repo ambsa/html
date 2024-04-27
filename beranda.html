@@ -19,39 +19,43 @@
     <!-- Bagian Navbar -->
     <div>
         <nav class="navbar navbar-expand-lg navbar-light">
-            <div class="container-fluid">
+            <div class="container">
                 <a class="navbar-brand" href="beranda.html">
                     <img src="assets/img/logo.png" style="width: 110px; height: 60px;" alt="Logo">
                 </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
-                    aria-label="Toggle navigation">
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#navbarOffcanvasLg" aria-controls="navbarOffcanvasLg" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
-                    <ul class="navbar-nav flex-grow-1 pe-3">
-                        <li class="nav-item ">
-                            <a class="nav-link active font-weight-bold" aria-current="page"
-                                href="beranda.html">Beranda</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="tentang.html">Tentang Kami</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="blog.html">Blog</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="belajar.html">Belajar</a>
-                        </li>
-                    </ul>
-                    <div class="navbar-btns">
-                        <a href="login.html" class="btn btn-outline-primary">Masuk</a>
-                        <a href="registrasi.html" class="btn btn-primary" style="margin-right: 10px;">Daftar</a>
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="navbarOffcanvasLg" aria-labelledby="navbarOffcanvasLgLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="navbarOffcanvasLgLabel">Menu</h5>
+                        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link active font-weight-bold" aria-current="page" href="beranda.html">Beranda</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="tentang.html">Tentang Kami</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="blog.html">Blog</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="belajar.html">Belajar</a>
+                            </li>
+                        </ul>
+                        <div class="navbar-btns ms-auto">
+                            <a href="login.html" class="btn btn-outline-primary me-2">Masuk</a>
+                            <a href="registrasi.html" class="btn btn-primary">Daftar</a>
+                        </div>
                     </div>
                 </div>
             </div>
         </nav>
-    </div>
+    </div>     
+    
 
 
     <!-- Bagian isi konten -->
@@ -68,7 +72,7 @@
                         Yang Teruji Oleh Ahli Bahasa Seluruh Dunia! </p>
                     <div class="d-grid gap-2 d-lg-flex justify-content-lg-start">
                         <button onclick="location.href=''" type="button" class="btn btn-primary me-lg-2">Mulai Belajar Sekarang</button>
-                        <button onclick="location.href=''" type="button" class="btn btn-outline-primary">Dapatkan Percobaan Kelas Gratis</button>
+                        <Dapatkan onclick="location.href=''" type="button" class="btn btn-outline-primary"> Dapatkan Percobaan Kelas Gratis</button>
                     </div>
                 </div>
                 <div class="col-lg-6 order-lg-2">
@@ -216,9 +220,9 @@
                             <h1 class="fs-6 mt-3">Theresa Webb</h1>
                             <h2 class="fs-7 small-font">Penutur Bahasa Somalia</h2>
                             <p class="card-text mt-3">Telah menjadi pengajar bahasa selama 12 tahun</p>
-                            <a href="https://twitter.com/login" class="card-link"><i
+                            <a href="https://twitter.com/login" class="card-link-1"><i
                                     class="fab fa-twitter icon-large"></i></a>
-                            <a href="https://www.linkedin.com/login/in" class="card-link ms-2"><i
+                            <a href="https://www.linkedin.com/login/in" class="card-link-1 ms-2"><i
                                     class="fab fa-linkedin icon-large"></i></a>
                         </div>
                     </div>
@@ -231,10 +235,10 @@
                             <h1 class="fs-6 mt-3">Theresa Webb</h1>
                             <h2 class="fs-7 small-font">Penutur Bahasa Somalia</h2>
                             <p class="card-text mt-3">Telah menjadi pengajar bahasa selama 12 tahun</p>
-                            <a href="https://twitter.com/login" class="card-link"><i
-                                    class="fab fa-twitter icon-large"></i></a>
-                            <a href="https://www.linkedin.com/login/in" class="card-link ms-2"><i
-                                    class="fab fa-linkedin icon-large"></i></a>
+                            <a href="https://twitter.com/login" class="card-link-1"><i
+                                class="fab fa-twitter icon-large"></i></a>
+                        <a href="https://www.linkedin.com/login/in" class="card-link-1 ms-2"><i
+                                class="fab fa-linkedin icon-large"></i></a>
                         </div>
                     </div>
                 </div>
@@ -246,10 +250,10 @@
                             <h1 class="fs-6 mt-3">Theresa Webb</h1>
                             <h2 class="fs-7 small-font">Penutur Bahasa Somalia</h2>
                             <p class="card-text mt-3">Telah menjadi pengajar bahasa selama 12 tahun</p>
-                            <a href="https://twitter.com/login" class="card-link"><i
-                                    class="fab fa-twitter icon-large"></i></a>
-                            <a href="https://www.linkedin.com/login/in" class="card-link ms-2"><i
-                                    class="fab fa-linkedin icon-large"></i></a>
+                            <a href="https://twitter.com/login" class="card-link-1"><i
+                                class="fab fa-twitter icon-large"></i></a>
+                        <a href="https://www.linkedin.com/login/in" class="card-link-1 ms-2"><i
+                                class="fab fa-linkedin icon-large"></i></a>
                         </div>
                     </div>
                 </div>
@@ -261,10 +265,10 @@
                             <h1 class="fs-6 mt-3">Theresa Webb</h1>
                             <h2 class="fs-7 small-font">Penutur Bahasa Somalia</h2>
                             <p class="card-text mt-3">Telah menjadi pengajar bahasa selama 12 tahun</p>
-                            <a href="https://twitter.com/login" class="card-link"><i
-                                    class="fab fa-twitter icon-large"></i></a>
-                            <a href="https://www.linkedin.com/login/in" class="card-link ms-2"><i
-                                    class="fab fa-linkedin icon-large"></i></a>
+                            <a href="https://twitter.com/login" class="card-link-1"><i
+                                class="fab fa-twitter icon-large"></i></a>
+                        <a href="https://www.linkedin.com/login/in" class="card-link-1 ms-2"><i
+                                class="fab fa-linkedin icon-large"></i></a>
                         </div>
                     </div>
                 </div>
@@ -305,91 +309,38 @@
       
     </script>
 
-
-
-
-
-    <div class="container-fluid" style="margin-top: 50px; background-color: #46346A; min-height: 30vh;">
-        <footer class="container py-5">
-            <div class="row">
-                <div class="col-12 col-md-3 mb-3">
-                    <h5 style="color: white;">Section</h5>
-                    <ul class="nav flex-column">
-                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-light"
-                                style="color: white;">Home</a></li>
-                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-light"
-                                style="color: white;">Features</a></li>
-                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-light"
-                                style="color: white;">Pricing</a></li>
-                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-light"
-                                style="color: white;">FAQs</a></li>
-                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-light"
-                                style="color: white;">About</a></li>
-                    </ul>
-                </div>
-
-                <div class="col-12 col-md-3 mb-3">
-                    <h5 style="color: white;">Section</h5>
-                    <ul class="nav flex-column">
-                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-light"
-                                style="color: white;">Home</a></li>
-                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-light"
-                                style="color: white;">Features</a></li>
-                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-light"
-                                style="color: white;">Pricing</a></li>
-                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-light"
-                                style="color: white;">FAQs</a></li>
-                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-light"
-                                style="color: white;">About</a></li>
-                    </ul>
-                </div>
-
-                <div class="col-12 col-md-3 mb-3">
-                    <h5 style="color: white;">Section</h5>
-                    <ul class="nav flex-column">
-                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-light"
-                                style="color: white;">Home</a></li>
-                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-light"
-                                style="color: white;">Features</a></li>
-                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-light"
-                                style="color: white;">Pricing</a></li>
-                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-light"
-                                style="color: white;">FAQs</a></li>
-                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-light"
-                                style="color: white;">About</a></li>
-                    </ul>
-                </div>
-
-                <div class="col-12 col-md-3 mb-3">
-                    <h5 style="color: white;">Subscribe to our newsletter</h5>
-                    <p style="color: white;">Monthly digest of what's new and exciting from us.</p>
-                    <form class="d-flex flex-column flex-md-row gap-2">
-                        <label for="newsletter1" class="visually-hidden">Email address</label>
-                        <input id="newsletter1" type="text" class="form-control" placeholder="Email address">
-                        <button class="btn btn-primary" type="button">Subscribe</button>
-                    </form>
-                </div>
+<div class="container-fluid" style="margin-top: 50px; background-color: #46346A; min-height: 30vh;">
+    <footer class="py-4">
+        <div class="row justify-content-between">
+            <div class="col-12 col-md-3 float-left" style="margin-left: 50px;">
+                <img src="assets/img/logo.png" style="width: 110px; height: 60px; margin-right: 10px;" alt="Logo">
+                <p style="color: #EDFFF9; text-align: left;">Tempat Belajar Bahasa Asing Yang Ga Bikin Pusing</p>                
             </div>
+                       
 
-            <div class="d-flex flex-column flex-md-row justify-content-between py-2 my-2 border-top text-center">
-                <p class="mx-auto" style="color: white;">&copy; 2024 Company, Inc. All rights reserved.</p>
-                <ul class="list-unstyled d-flex">
-                    <li class="ms-3"><a class="link-body-emphasis" href="#" style="color: white;"><svg class="bi"
-                                width="24" height="24">
-                                <use xlink:href="#twitter" />
-                            </svg></a></li>
-                    <li class="ms-3"><a class="link-body-emphasis" href="#" style="color: white;"><svg class="bi"
-                                width="24" height="24">
-                                <use xlink:href="#instagram" />
-                            </svg></a></li>
-                    <li class="ms-3"><a class="link-body-emphasis" href="#" style="color: white;"><svg class="bi"
-                                width="24" height="24">
-                                <use xlink:href="#facebook" />
-                            </svg></a></li>
-                </ul>
+            <div class="col-12 col-md-3 mb-3 float-right">
+                <h6 style="color: white; font-weight: normal;">Tetap terhubung dengan kami</h6>
+                <div style="margin-top: 20px;">
+                    <a href="" style="display: inline-block; margin: 0 10px; font-size: 24px; color: white;"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="" style="display: inline-block; margin: 0 10px; font-size: 24px; color: white;"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="" style="display: inline-block; margin: 0 10px; font-size: 24px; color: white;"><i class="fa-brands fa-square-whatsapp"></i></a>
+                    <a href="" style="display: inline-block; margin: 0 10px; font-size: 24px; color: white;"><i class="fa-brands fa-x-twitter"></i></a>
+                </div>
+                
             </div>
-        </footer>
-    </div>
+            
+            
+        </div>
+        
+        <div style="position: relative;">
+            <div class="d-flex flex-column flex-md-row justify-content-between py-2 my-2 text-center">
+                <p class="mx-auto" style="color: white;">&copy; 2024 LinguaLearn, Group 10 In Educourse.</p>
+                <img src="/assets/img/img_footer.png" alt="" style="position: absolute; bottom: 0; right: 0; width: 170px;">
+            </div>
+        </div>
+    </footer>
+</div>        
+
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
@@ -397,6 +348,7 @@
     <script src="https://kit.fontawesome.com/a329084b4e.js" crossorigin="anonymous"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="/assets/js/beranda.js"></script>
+    
 
 
 </body>
