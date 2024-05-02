@@ -4,12 +4,7 @@
 
 /* body */
 body{
-    font-family: Inter;
-}
-.nav-link:hover {
-    color: #000; /* Warna teks saat dihover */
-    background-color: #f0f0f0; /* Warna latar belakang saat dihover */
-    transition: color 0.3s, background-color 0.3s; /* Transisi animasi */
+    font-family: "inter";
 }
  
  /* swiper */
@@ -68,10 +63,7 @@ body{
             border-radius: 0 25px 0 0;
             background-color: #fff;
         }
-       
 
-       
-       
        .card-image {
            position: relative;
            height: 150px;
@@ -234,7 +226,7 @@ body{
 
 /* end */
 
-/* navbar */
+
 .card-container {
     display: flex;
     justify-content: left;
@@ -246,10 +238,27 @@ body{
     margin-top: 80px; /* Atur nilai margin top sesuai kebutuhan */
 }
 
+.nav-link:hover {
+    color: #000; /* Warna teks saat dihover */
+    background-color: #f0f0f0; /* Warna latar belakang saat dihover */
+    transition: color 0.3s, background-color 0.3s; /* Transisi animasi */
+}
 
 .navbar-btns button {
     margin-right: 5px;
     /* */
+}
+.navbar-fixed {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000; /* Pastikan z-index lebih tinggi dari elemen lain di halaman */
+    transition: transform 0.3s ease; /* Efek transisi untuk perubahan transformasi */
+}
+/* Tambahkan style saat navbar sedang di-scroll */
+.navbar-scrolled {
+    background-color: #ffffff; /* Ganti warna latar belakang navbar saat di-scroll */
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Tambahkan shadow untuk efek lift */
 }
 
 .card {

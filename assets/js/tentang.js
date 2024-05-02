@@ -64,3 +64,19 @@ function scrollFunction() {
         scrollToTopBtn.style.display = "none";
     }
 }
+$(document).ready(function(){
+    var nav = $('nav');
+    var navHeight = nav.outerHeight();
+
+    $(window).scroll(function () {
+        if ($(this).scrollTop() > navHeight) {
+            nav.addClass('navbar-fixed');
+            // Tambahkan class 'navbar-scrolled' untuk efek saat di-scroll
+            nav.addClass('navbar-scrolled');
+        } else {
+            nav.removeClass('navbar-fixed');
+            // Hapus class 'navbar-scrolled' saat tidak di-scroll
+            nav.removeClass('navbar-scrolled');
+        }
+    });
+});
