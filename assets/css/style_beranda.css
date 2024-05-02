@@ -1,3 +1,15 @@
+/* font */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+/* end */
+
+/* body */
+body{
+    font-family: Inter;
+}
+
+
+
+
 .card-container {
     display: flex;
     justify-content: left;
@@ -92,6 +104,18 @@ border-radius: 16px;
 padding: 0.5rem;
 } */
 
+
+.card-modul .card-body i {
+    background-color: #E0EAFF;
+    border-radius: 10px;
+    padding: 7px;
+    color: #46346A;
+    font-size: 24px;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    line-height: 1;
+}
 .card.card.card-modul{
     border-radius: 15px;
 }
@@ -103,6 +127,7 @@ transform: translateY(-10px);
 box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Menambahkan bayangan */
 cursor: pointer; /* Mengubah ikon kursor saat dihover */
 }
+
 /* modal scrolled */
 /* Style untuk modal */
 .modal {
@@ -168,6 +193,4 @@ cursor: pointer; /* Mengubah ikon kursor saat dihover */
         margin-bottom: 20px;
     }
 }
-
-
 /* end */

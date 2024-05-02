@@ -4,10 +4,13 @@
 <head>
     <!-- Favicon -->
     <link rel="icon" type="image/x-icon" href="./assets/img/logo.jpg" />
-    
+
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="/assets/css/style_tentang.css">
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Belajar HTML</title>
@@ -16,9 +19,9 @@
 </head>
 
 <body>
-     <!-- Bagian Navbar -->
-     <div>
-        <nav class="navbar navbar-expand-lg navbar-light">
+    <!-- Bagian Navbar -->
+    <div>
+        <nav class="navbar navbar-expand-lg navbar-light " >
             <div class="container">
                 <a class="navbar-brand" href="beranda.html">
                     <img src="assets/img/logo.png" style="width: 110px; height: 60px;" alt="Logo">
@@ -38,17 +41,19 @@
                     <div class="offcanvas-body">
                         <ul class="navbar-nav mb-2 mb-lg-0">
                             <li class="nav-item">
-                                <a class="nav-link" aria-current="page"
-                                    href="beranda.html">Beranda</a>
+                                <a class="nav-link" aria-current="page" href="beranda.html"
+                                    style="color: #46346A; font-weight: 500;">Beranda</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link active font-weight-bold" href="tentang.html">Tentang Kami</a>
+                                <a class="nav-link active" href="tentang.html"
+                                    style="color: #46346A; font-weight: 500;">Tentang Kami</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="blog.html">Blog</a>
+                                <a class="nav-link" href="belajar.html"
+                                    style="color: #46346A; font-weight: 500;">Belajar</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="belajar.html">Belajar</a>
+                                <a class="nav-link" href="blog.html" style="color: #46346A; font-weight: 500;">Blog</a>
                             </li>
                         </ul>
                         <div class="navbar-btns ms-auto">
@@ -60,248 +65,282 @@
             </div>
         </nav>
     </div>
-
+    <!-- end -->
     <!-- Content 1 -->
-    <div class="container-fluid hero-header mb-5">
-        <img srcset="/assets/img/gambar_tentang1.png 1x, /assets/img/gambar_tentang1@2x.png 2x" alt="" class="img-up">
-        <h1 class="display-4 text-black animated slideInRight"><strong>Tentang LinguaLearn</strong></h1>
-        <h4>LinguaLearn Hadir Untuk Semua Kalangan Dan Semua Gaya Belajar Setiap Orang! </h4>
-        <img srcset="/assets/img/gambar_tentang2.png 1x, /assets/img/gambar_tentang2@2x.png 2x" alt=""
-            class="small-img">
-    </div>
-
-    <!-- content 2 -->
-    <div class="container mb-5">
-        <div class="row align-items-center">
-            <p class="text-center">Visi Misi LinguaLearn</p>
-            <h1 class="display-4 text-black text-center"><strong>Visi Misi Kami Sebagai Perusahaan Pendidikan</strong>
-            </h1>
-        </div>
-    </div>
-
-    <!-- card / content 3 -->
-    <div class="container-fluid hero-header mb-5">
+    <section style="margin-bottom: 15%; margin-top: 5%;">
         <div class="container">
-            <div class="row align-items-center justify-content-center">
-                <!-- Menggunakan justify-content-center untuk mengatur agar konten menjadi terpusat secara horizontal -->
-                <div class="col-lg-4 col-md-6 col-sm-12 mb-4"><!-- Menambahkan kolom responsif -->
-                    <div class="card mx-auto" style="width: 18rem;">
-                        <!-- Menambahkan kelas mx-auto untuk memusatkan secara horizontal -->
-                        <div class="card-body py-4">
-                            <!-- Menambahkan kelas py-4 untuk memberikan padding di atas dan bawah -->
-                            <i class="fa-solid fa-desktop"></i><span style="margin-left: 10px;">Modul
-                                Pembelajaran</span>
-                            <p class="card-text" style="margin-top: 30px;">Kami Memiliki Modul Pembelajaran Yang
-                                Mengedepankan Metode Belajar Visual, Auditori, Dan Kinestetik.</p>
-                            <a href="#" class="card-link">Pelajari Lebih Lanjut ></a>
+            <div class="row ">
+                <div class="col-lg-6 col-md-6 col-sm-12">
+                    <div class="short">
+                        <div class="sec-heading mb-3">
+                            <h2 style="text-align: center; font-weight: bold;">Tentang LinguaLearn</h2>
+                            <p style="text-align: justify; margin-top: 20px;">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloremque debitis omnis eos, quo ex minus quia quas beatae minima perspiciatis.</p>
                         </div>
                     </div>
-                </div>
-                <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
-                    <div class="card mx-auto" style="width: 18rem;">
-                        <div class="card-body py-4">
-                            <i class="fa-solid fa-laptop"></i><span style="margin-left: 10px;">Penutur Asli</span>
-                            <p class="card-text" style="margin-top: 30px;">Membangun Lingkungan Belajar Dengan Penutur
-                                Asli Bahasa Yang Kamu Pelajari Untuk Memudahkan Dalam Proses Belajar.</p>
-                            <a href="#" class="card-link">Pelajari Lebih Lanjut ></a>
+                    <div class="container">
+                        <img src="assets/img/gambar1.png" alt="deskripsi 1" style="width: 50px; height: auto; margin-right: 20px; display: inline-block; vertical-align: middle;">
+                        <div style="display: inline-block; vertical-align: middle;">
+                            <span style="display: block; text-align: left; font-size: medium; color: #46346A; margin-bottom: 5px;">Ease to Learn</span>
+                            <p style="text-align: left; margin: 0;">Using the world's best curriculum STEAM based methods</p>
                         </div>
                     </div>
-                </div>
-                <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
-                    <div class="card mx-auto" style="width: 18rem;">
-                        <div class="card-body py-4">
-                            <i class="fa-solid fa-chart-line"></i><span style="margin-left: 10px;">Forum Diskusi
-                                Global</span>
-                            <p class="card-text" style="margin-top: 30px;">Dengan Menjangkau Pengguna Global Dan
-                                Menyatukannya Dalam Forum Diskusi Sehingga Dapat Belajar Bersama Pengguna Lain.</p>
-                            <a href="#" class="card-link">Pelajari Lebih Lanjut ></a>
+                    <div class="container mt-3">
+                        <img src="assets/img/gambar1.png" alt="deskripsi 1" style="width: 50px; height: auto; margin-right: 20px; display: inline-block; vertical-align: middle;">
+                        <div style="display: inline-block; vertical-align: middle;">
+                            <span style="display: block; text-align: left; font-size: medium; color: #46346A; margin-bottom: 5px;">Ease Going</span>
+                            <p style="text-align: left; margin: 0;">Using the world's best curriculum STEAM based methods</p>
                         </div>
                     </div>
+                    <div class="container mt-3">
+                        <img src="assets/img/gambar1.png" alt="deskripsi 1" style="width: 50px; height: auto; margin-right: 20px; display: inline-block; vertical-align: middle;">
+                        <div style="display: inline-block; vertical-align: middle;">
+                            <span style="display: block; text-align: left; font-size: medium; color: #46346A; margin-bottom: 5px;">Ease Appy</span>
+                            <p style="text-align: left; margin: 0;">Using the world's best curriculum STEAM based methods</p>
+                        </div>
+                    </div>
+                    <div class="container mt-3">
+                        <img src="assets/img/gambar1.png" alt="deskripsi 1" style="width: 50px; height: auto; margin-right: 20px; display: inline-block; vertical-align: middle;">
+                        <div style="display: inline-block; vertical-align: middle;">
+                            <span style="display: block; text-align: left; font-size: medium; color: #46346A; margin-bottom: 5px;">Ease Santuy</span>
+                            <p style="text-align: left; margin: 0;">Using the world's best curriculum STEAM based methods</p>
+                        </div>
+                    </div>
+                    
+                    
+                    
+                    
+                    
+                        
+                    
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-12">
+                    <video width="640" height="360" controls>
+                        <source src="/assets/path/Gimana Caranya Bisa Jago Banyak Bahasa_.mp4" type="video/mp4">
+                    </video>
                 </div>
             </div>
         </div>
-    </div>
-    <!-- Content 4 -->
-    <div class="container mb-5 content-4">
-        <div class="row align-items-center">
-            <p class="text-center">Kami Dibalik LinguaLearn</p>
-            <h1 class="display-4 text-black text-center"><strong>Siapa Saja Dibalik Lingualearn?</strong></h1>
-        </div>
-    </div>
-    <!-- card / content 5 -->
-    <div class="container">
-        <div class="row row-cols-1 row-cols-md-4 row-cols-lg-5 g-5 align-items-center justify-content-center">
-            <div class="card">
-                <img src="assets/img/penutur4.png" alt="Gambar 1" class="card-img">
-                <div class="card-content">
-                    <h1 class="fs-6 mt-3">Theresa Webb</h1>
-                    <h2 class="fs-7 small-font">Penutur Bahasa Somalia</h2>
-                    <p class="card-text mt-3">Telah menjadi pengajar bahasa selama 12 tahun</p>
-                    <a href="https://twitter.com/login" class="card-link"><i class="fab fa-twitter icon-large"></i></a>
-                    <a href="https://www.linkedin.com/login/in" class="card-link ms-2"><i class="fab fa-linkedin icon-large"></i></a>
+    </section>
+    <!-- end -->
+    <!-- Content 3 -->
+    <section class="bg-light">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-5 col-md-6 col-sm-12">
+                    <div class="sec-heading text-center">
+                        <h2>Our Teams</h2>
+                    </div>
                 </div>
-            </div>
-            <div class="card">
-                <img src="assets/img/penutur1.png" alt="Gambar 2" class="card-img">
-                <div class="card-content">
-                    <h1 class="fs-6 mt-3">Theresa Webb</h1>
-                    <h2 class="fs-7 small-font">Penutur Bahasa Somalia</h2>
-                    <p class="card-text mt-3">Telah menjadi pengajar bahasa selama 12 tahun</p>
-                    <a href="https://twitter.com/login" class="card-link"><i class="fab fa-twitter icon-large"></i></a>
-                    <a href="https://www.linkedin.com/login/in" class="card-link ms-2"><i class="fab fa-linkedin icon-large"></i></a>
-                </div>
-            </div> 
-            <div class="card">
-                <img src="assets/img/penutur1.png" alt="Gambar 3" class="card-img">
-                <div class="card-content">
-                    <h1 class="fs-6 mt-3">Theresa Webb</h1>
-                    <h2 class="fs-7 small-font">Penutur Bahasa Somalia</h2>
-                    <p class="card-text mt-3">Telah menjadi pengajar bahasa selama 12 tahun</p>
-                    <a href="https://twitter.com/login" class="card-link"><i class="fab fa-twitter icon-large"></i></a>
-                    <a href="https://www.linkedin.com/login/in" class="card-link ms-2"><i class="fab fa-linkedin icon-large"></i></a>
-                </div>
-            </div> 
-            <div class="card">
-                <img src="assets/img/penutur1.png" alt="Gambar 4" class="card-img">
-                <div class="card-content">
-                    <h1 class="fs-6 mt-3">Theresa Webb</h1>
-                    <h2 class="fs-7 small-font">Penutur Bahasa Somalia</h2>
-                    <p class="card-text mt-3">Telah menjadi pengajar bahasa selama 12 tahun</p>
-                    <a href="https://twitter.com/login" class="card-link"><i class="fab fa-twitter icon-large"></i></a>
-                    <a href="https://www.linkedin.com/login/in" class="card-link ms-2"><i class="fab fa-linkedin icon-large"></i></a>
-                </div>
-            </div> 
-            <div class="card">
-                <img src="assets/img/penutur1.png" alt="Gambar 4" class="card-img">
-                <div class="card-content">
-                    <h1 class="fs-6 mt-3">Theresa Webb</h1>
-                    <h2 class="fs-7 small-font">Penutur Bahasa Somalia</h2>
-                    <p class="card-text mt-3">Telah menjadi pengajar bahasa selama 12 tahun</p>
-                    <a href="https://twitter.com/login" class="card-link"><i class="fab fa-twitter icon-large"></i></a>
-                    <a href="https://www.linkedin.com/login/in" class="card-link ms-2"><i class="fab fa-linkedin icon-large"></i></a>
-                </div>
-            </div>
-            <div class="card">
-                <img src="assets/img/penutur1.png" alt="Gambar 4" class="card-img">
-                <div class="card-content">
-                    <h1 class="fs-6 mt-3">Theresa Webb</h1>
-                    <h2 class="fs-7 small-font">Penutur Bahasa Somalia</h2>
-                    <p class="card-text mt-3">Telah menjadi pengajar bahasa selama 12 tahun</p>
-                    <a href="https://twitter.com/login" class="card-link"><i class="fab fa-twitter icon-large"></i></a>
-                    <a href="https://www.linkedin.com/login/in" class="card-link ms-2"><i class="fab fa-linkedin icon-large"></i></a>
-                </div>
-            </div>
-            <div class="card">
-                <img src="assets/img/penutur1.png" alt="Gambar 4" class="card-img">
-                <div class="card-content">
-                    <h1 class="fs-6 mt-3">Theresa Webb</h1>
-                    <h2 class="fs-7 small-font">Penutur Bahasa Somalia</h2>
-                    <p class="card-text mt-3">Telah menjadi pengajar bahasa selama 12 tahun</p>
-                    <a href="https://twitter.com/login" class="card-link"><i class="fab fa-twitter icon-large"></i></a>
-                    <a href="https://www.linkedin.com/login/in" class="card-link ms-2"><i class="fab fa-linkedin icon-large"></i></a>
-                </div>
-            </div>
-            <div class="card">
-                <img src="assets/img/penutur1.png" alt="Gambar 4" class="card-img">
-                <div class="card-content">
-                    <h1 class="fs-6 mt-3">Theresa Webb</h1>
-                    <h2 class="fs-7 small-font">Penutur Bahasa Somalia</h2>
-                    <p class="card-text mt-3">Telah menjadi pengajar bahasa selama 12 tahun</p>
-                    <a href="https://twitter.com/login" class="card-link"><i class="fab fa-twitter icon-large"></i></a>
-                    <a href="https://www.linkedin.com/login/in" class="card-link ms-2"><i class="fab fa-linkedin icon-large"></i></a>
-                </div>
-            </div>
-            <div class="card">
-                <img src="assets/img/penutur1.png" alt="Gambar 4" class="card-img">
-                <div class="card-content">
-                    <h1 class="fs-6 mt-3">Theresa Webb</h1>
-                    <h2 class="fs-7 small-font">Penutur Bahasa Somalia</h2>
-                    <p class="card-text mt-3">Telah menjadi pengajar bahasa selama 12 tahun</p>
-                    <a href="https://twitter.com/login" class="card-link"><i class="fab fa-twitter icon-large"></i></a>
-                    <a href="https://www.linkedin.com/login/in" class="card-link ms-2"><i class="fab fa-linkedin icon-large"></i></a>
-                </div>
-            </div>
-            <div class="card">
-                <img src="assets/img/penutur1.png" alt="Gambar 4" class="card-img">
-                <div class="card-content">
-                    <h1 class="fs-6 mt-3">Theresa Webb</h1>
-                    <h2 class="fs-7 small-font">Penutur Bahasa Somalia</h2>
-                    <p class="card-text mt-3">Telah menjadi pengajar bahasa selama 12 tahun</p>
-                    <a href="https://twitter.com/login" class="card-link"><i class="fab fa-twitter icon-large"></i></a>
-                    <a href="https://www.linkedin.com/login/in" class="card-link ms-2"><i class="fab fa-linkedin icon-large"></i></a>
-                </div>
-            </div>           
-        </div>
-    </div>
-    <!-- content 6 -->
-    <div class="container-fluid" style="margin-top: 50px; background-color: #EDFFF9; min-height: 30vh; ">
-        <div class="row align-items-center justify-content-center"
-            style="align-items: center; justify-content: center;">
-            <!-- Menggunakan classes align-items-center dan justify-content-center -->
-            <!-- Gambar di sisi kiri -->
-            <div class="col-md-2 col-4 text-center">
-                <img class="image-fluid" src="assets/img/hiasan1.png" alt="Gambar Kiri" style="max-width: 50%;">
-            </div>
-            <div class="col-md-8 col-12 text-center">
-                <!-- Menggunakan col dengan lebar md-8 untuk membuat row lebih kecil -->
-                <h1 class="display-5 text-black"><strong>Mari Mulai Belajar </strong><span
-                        class="fw-light text-dark"><strong> Bahasa Apapun Yang Kamu Mau</strong></span><span
-                        class="fw-light text-dark"><strong> Bersama Kami</strong></span></h1>
-                <div class="mt-4">
-                    <button class="btn btn-primary btn-md" style="background-color: #605DEC; color: white;">Hubungi Kami
-                        Untuk Lebih Lanjut</button>
-                </div>
-            </div>
-            <!-- Gambar di sisi kanan -->
-            <div class="col-md-2 col-4 text-center">
-                <img class="image-fluid" src="assets/img/hiasan2.png" alt="Gambar Kanan" style="max-width: 100%;">
-            </div>
-        </div>
-    </div>
+                <!-- content 5 -->
+                <div class="container mt-5 mb-5">
+                    <div class="slide-container swiper">
+                        <div class="slide-content">
+                            <div class="card-wrapper swiper-wrapper">
+                                <div class="card swiper-slide">
+                                    <div class="image-content">
+                                        <span class="overlay"></span>
 
+                                        <div class="card-image">
+                                            <img src="/assets/img/penutur1.png" alt="" class="card-img">
+
+                                        </div>
+                                    </div>
+                                    <div class="card-content">
+                                        <h2 class="name">Agus</h2>
+                                        <p class="description">
+                                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vero perspiciatis
+                                            fugiat doloremque ullam quasi error? Asperiores corrupti itaque alias,
+                                            deserunt excepturi dolore eaque dolor ex minima, eum dicta voluptas
+                                            exercitationem.
+                                        </p>
+
+                                        <button class="button">View more</button>
+                                    </div>
+                                </div>
+                                <div class="card swiper-slide">
+                                    <div class="image-content">
+                                        <span class="overlay"></span>
+
+                                        <div class="card-image">
+                                            <img src="/assets/img/penutur1.png" alt="" class="card-img">
+
+                                        </div>
+                                    </div>
+                                    <div class="card-content">
+                                        <h2 class="name">Agus</h2>
+                                        <p class="description">
+                                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vero perspiciatis
+                                            fugiat doloremque ullam quasi error? Asperiores corrupti itaque alias,
+                                            deserunt excepturi dolore eaque dolor ex minima, eum dicta voluptas
+                                            exercitationem.
+                                        </p>
+
+                                        <button class="button">View more</button>
+                                    </div>
+                                </div>
+                                <div class="card swiper-slide">
+                                    <div class="image-content">
+                                        <span class="overlay"></span>
+
+                                        <div class="card-image">
+                                            <img src="/assets/img/penutur1.png" alt="" class="card-img">
+
+                                        </div>
+                                    </div>
+                                    <div class="card-content">
+                                        <h2 class="name">Agus</h2>
+                                        <p class="description">
+                                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vero perspiciatis
+                                            fugiat doloremque ullam quasi error? Asperiores corrupti itaque alias,
+                                            deserunt excepturi dolore eaque dolor ex minima, eum dicta voluptas
+                                            exercitationem.
+                                        </p>
+
+                                        <button class="button">View more</button>
+                                    </div>
+                                </div>
+                                <div class="card swiper-slide">
+                                    <div class="image-content">
+                                        <span class="overlay"></span>
+
+                                        <div class="card-image">
+                                            <img src="/assets/img/penutur1.png" alt="" class="card-img">
+
+                                        </div>
+                                    </div>
+                                    <div class="card-content">
+                                        <h2 class="name">Agus</h2>
+                                        <p class="description">
+                                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vero perspiciatis
+                                            fugiat doloremque ullam quasi error? Asperiores corrupti itaque alias,
+                                            deserunt excepturi dolore eaque dolor ex minima, eum dicta voluptas
+                                            exercitationem.
+                                        </p>
+
+                                        <button class="button">View more</button>
+                                    </div>
+                                </div>
+                                <div class="card swiper-slide">
+                                    <div class="image-content">
+                                        <span class="overlay"></span>
+
+                                        <div class="card-image">
+                                            <img src="/assets/img/penutur1.png" alt="" class="card-img">
+
+                                        </div>
+                                    </div>
+                                    <div class="card-content">
+                                        <h2 class="name">Agus</h2>
+                                        <p class="description">
+                                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vero perspiciatis
+                                            fugiat doloremque ullam quasi error? Asperiores corrupti itaque alias,
+                                            deserunt excepturi dolore eaque dolor ex minima, eum dicta voluptas
+                                            exercitationem.
+                                        </p>
+
+                                        <button class="button">View more</button>
+                                    </div>
+                                </div>
+                                <div class="card swiper-slide">
+                                    <div class="image-content">
+                                        <span class="overlay"></span>
+
+                                        <div class="card-image">
+                                            <img src="/assets/img/penutur1.png" alt="" class="card-img">
+
+                                        </div>
+                                    </div>
+                                    <div class="card-content">
+                                        <h2 class="name">Agus</h2>
+                                        <p class="description">
+                                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vero perspiciatis
+                                            fugiat doloremque ullam quasi error? Asperiores corrupti itaque alias,
+                                            deserunt excepturi dolore eaque dolor ex minima, eum dicta voluptas
+                                            exercitationem.
+                                        </p>
+
+                                        <button class="button">View more</button>
+                                    </div>
+                                </div>
+                                <div class="card swiper-slide">
+                                    <div class="image-content">
+                                        <span class="overlay"></span>
+
+                                        <div class="card-image">
+                                            <img src="/assets/img/penutur1.png" alt="" class="card-img">
+
+                                        </div>
+                                    </div>
+                                    <div class="card-content">
+                                        <h2 class="name">Agus</h2>
+                                        <p class="description">
+                                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vero perspiciatis
+                                            fugiat doloremque ullam quasi error? Asperiores corrupti itaque alias,
+                                            deserunt excepturi dolore eaque dolor ex minima, eum dicta voluptas
+                                            exercitationem.
+                                        </p>
+
+                                        <button class="button">View more</button>
+                                    </div>
+                                </div>
+                                <div class="card swiper-slide">
+                                    <div class="image-content">
+                                        <span class="overlay"></span>
+
+                                        <div class="card-image">
+                                            <img src="/assets/img/penutur1.png" alt="" class="card-img">
+
+                                        </div>
+                                    </div>
+                                    <div class="card-content">
+                                        <h2 class="name">Agus</h2>
+                                        <p class="description">
+                                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vero perspiciatis
+                                            fugiat doloremque ullam quasi error? Asperiores corrupti itaque alias,
+                                            deserunt excepturi dolore eaque dolor ex minima, eum dicta voluptas
+                                            exercitationem.
+                                        </p>
+
+                                        <button class="button">View more</button>
+                                    </div>
+                                </div>
+                                <div class="card swiper-slide">
+                                    <div class="image-content">
+                                        <span class="overlay"></span>
+
+                                        <div class="card-image">
+                                            <img src="/assets/img/penutur1.png" alt="" class="card-img">
+
+                                        </div>
+                                    </div>
+                                    <div class="card-content">
+                                        <h2 class="name">Agus</h2>
+                                        <p class="description">
+                                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vero perspiciatis
+                                            fugiat doloremque ullam quasi error? Asperiores corrupti itaque alias,
+                                            deserunt excepturi dolore eaque dolor ex minima, eum dicta voluptas
+                                            exercitationem.
+                                        </p>
+
+                                        <button class="button">View more</button>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="swiper-button-next swiper-navBtn"></div>
+                        <div class="swiper-button-prev swiper-navBtn"></div>
+                        <div class="swiper-pagination"></div>
+                    </div>
+                </div>
+                <!-- end -->
+            </div>
+        </div>
+    </section>
     <button onclick="scrollToTop()" id="scrollToTopBtn" title="Go to top"
         class="btn rounded-pill btn-icon btn-outline-secondary">
         <span><i class="fa-solid fa-arrow-up"></i></span>
     </button>
-    <script>
-        // Fungsi untuk mengarahkan halaman ke atas
-        function scrollToTop() {
-            // Mendapatkan elemen <body>
-            const body = document.body;
-            // Mendapatkan elemen <html>
-            const html = document.documentElement;
-
-            // Menggunakan animasi scroll smooth (opsional)
-            body.scrollTo({
-                top: 0,
-                behavior: 'smooth'
-            });
-            html.scrollTo({
-                top: 0,
-                behavior: 'smooth'
-            });
-        }
-
-        // Memeriksa posisi scroll untuk menampilkan tombol
-        window.onscroll = function () {
-            scrollFunction();
-        };
-
-        function scrollFunction() {
-            const scrollToTopBtn = document.getElementById("scrollToTopBtn");
-
-            // Jika pengguna telah melakukan scroll lebih dari 20 piksel dari bagian atas halaman, tombol akan ditampilkan
-            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-                scrollToTopBtn.style.display = "block";
-            } else {
-                // Jika belum, tombol akan disembunyikan
-                scrollToTopBtn.style.display = "none";
-            }
-        }
-    </script>
-
-
-
 
     <!-- footer -->
     <div class="container-fluid" style="margin-top: 50px; background-color: #46346A; min-height: 30vh;">
@@ -344,6 +383,11 @@
         crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/a329084b4e.js" crossorigin="anonymous"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- Swiper JS -->
+    <script src="/assets/js/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- Initialize Swiper -->
+    <script src="/assets/js/tentang.js"></script>
 </body>
 
 </html>
