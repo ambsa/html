@@ -285,6 +285,10 @@
     margin-right: 20px;
     /* Atur jarak antara setiap item */
 }
+.navbar-nav .nav-link.active {
+    border-bottom: 2px solid #46346A; /* Warna dan ketebalan garis bawah */
+}
+
 
 
 /* end */

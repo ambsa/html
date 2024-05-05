@@ -102,6 +102,30 @@ body{
     margin-right: 20px;
     /* Atur jarak antara setiap item */
 }
+.navbar-nav .nav-link {
+    position: relative;
+}
+
+.navbar-nav .nav-link::after {
+    content: '';
+    position: absolute;
+    bottom: -2px; /* Jarak garis bawah dari teks */
+    left: 0;
+    width: 0; /* Mulai dengan lebar 0 */
+    height: 2px; /* Ketebalan garis bawah */
+    background-color: #46346A; /* Warna garis bawah */
+    transition: width 0.3s ease; /* Efek transisi smooth saat lebar berubah */
+}
+
+.navbar-nav .nav-link.active::after {
+    width: 100%; /* Lebar garis bawah saat item aktif */
+}
+
+.navbar-nav .nav-link:hover::after {
+    width: 90%; /* Mengurangi lebar garis bawah saat hover */
+}
+
+
 
 /* .navbar{
 background-color: #F2F0EB;
@@ -112,16 +136,20 @@ padding: 0.5rem;
 } */
 .navbar-fixed {
     position: fixed;
-    top: 0;
+    top: -100px; /* Navbar ditempatkan di luar layar atas */
     width: 100%;
-    z-index: 1000; /* Pastikan z-index lebih tinggi dari elemen lain di halaman */
-    transition: transform 0.3s ease; /* Efek transisi untuk perubahan transformasi */
+    z-index: 1000;
+    background-color: #ffffff; /* Warna latar belakang awal */
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Efek shadow awal */
+    opacity: 0; /* Mulai dengan kejelasan nol */
+    transition: top 0.3s ease, opacity 0.3s ease; /* Transisi untuk perubahan posisi dan kejelasan */
 }
-/* Tambahkan style saat navbar sedang di-scroll */
+
 .navbar-scrolled {
-    background-color: #ffffff; /* Ganti warna latar belakang navbar saat di-scroll */
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Tambahkan shadow untuk efek lift */
+    top: 0; /* Navbar muncul kembali ke posisi atas */
+    opacity: 1; /* Menampilkan navbar dengan opacity penuh */
 }
+
 /* end */
 
 
@@ -139,14 +167,13 @@ padding: 0.5rem;
 .card.card.card-modul{
     border-radius: 15px;
 }
-.card.card-modul:hover{
-
-transition: background-color 0.3s ease; /* Transisi halus */
-cursor: pointer; /* Mengubah kursor menjadi tanda tangan saat dihover */
-transform: translateY(-10px);
-box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Menambahkan bayangan */
-cursor: pointer; /* Mengubah ikon kursor saat dihover */
+.card.card-modul:hover {
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Menambahkan transisi pada transformasi dan bayangan */
+    cursor: pointer; /* Mengubah kursor menjadi tanda tangan saat dihover */
+    transform: translateY(-5px) scale(0.95); /* Menggeser ke atas dan sedikit menyusut */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Menambahkan bayangan */
 }
+
 
 /* modal scrolled */
 /* Style untuk modal */
@@ -177,15 +204,23 @@ cursor: pointer; /* Mengubah ikon kursor saat dihover */
   
   /* Style untuk tombol tutup */
   .close {
-    align-self: flex-end; /* Menempatkan tombol tutup di kanan */
+    align-self: flex-end;
     color: #aaa;
+    display: inline-block;
     font-size: 28px;
     font-weight: bold;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, color 0.3s ease; /* Menambahkan transisi untuk perubahan warna */
     cursor: pointer;
-  }
-  
+    transform: translateY(-5px) scale(0.95);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
 
-  /* Style untuk konten modal yang dapat digulir */
+.close:hover {
+    color: #000; /* Mengubah warna saat tombol dihover */
+    transform: rotate(180deg);
+}
+  
+ /* Style untuk konten modal yang dapat digulir */
   .modal-body {
     max-height: 300px; /* Atur tinggi maksimum konten yang dapat digulir */
     overflow-y: auto; /* Aktifkan penampilan gulir jika konten melebihi ketinggian maksimum */
@@ -200,17 +235,5 @@ cursor: pointer; /* Mengubah ikon kursor saat dihover */
 
 .card-link:hover {
     text-decoration: underline; /* menampilkan garis bawah saat tautan dihover */
-}
-
-/* decoration footer */
-@media (max-width: 1024px) {
-    .footer-column {
-        margin-bottom: 20px;
-    }
-}
-@media (max-width: 768px) {
-    .footer-column {
-        margin-bottom: 20px;
-    }
 }
 /* end */

@@ -70,6 +70,30 @@ body{
     /* Atur jarak kanan */
 }
 
+.navbar-nav .nav-link {
+    position: relative;
+}
+
+.navbar-nav .nav-link::after {
+    content: '';
+    position: absolute;
+    bottom: -2px; /* Jarak garis bawah dari teks */
+    left: 0;
+    width: 0; /* Mulai dengan lebar 0 */
+    height: 2px; /* Ketebalan garis bawah */
+    background-color: #46346A; /* Warna garis bawah */
+    transition: width 0.3s ease; /* Efek transisi smooth saat lebar berubah */
+}
+
+.navbar-nav .nav-link.active::after {
+    width: 100%; /* Lebar garis bawah saat item aktif */
+}
+
+.navbar-nav .nav-link:hover::after {
+    width: 90%; /* Mengurangi lebar garis bawah saat hover */
+}
+
+
 .navbar-nav .nav-item {
     margin-right: 20px;
     /* Atur jarak antara setiap item */
@@ -179,20 +203,13 @@ body{
         text-align: center;
     }
     
-    .button {
+    .card-link-1 {
         border: none;
-        font-size: 16px;
-        color: #fff;
-        padding: 8px 16px;
-        background-color: #4070f4;
-        border-radius: 6px;
+        font-size: 30px;
         margin: 14px;
         cursor: pointer;
         transition: all 0.3s ease;
-    }
-    
-    .button:hover {
-        background: #265df2;
+        color: #25D366;
     }
     
     .swiper-navBtn {
@@ -235,3 +252,90 @@ body{
         }
     }       
      /* end */
+
+     .card-modul .card-body i {
+        background-color: #E0EAFF;
+        border-radius: 10px;
+        padding: 7px;
+        color: #46346A;
+        font-size: 24px;
+        width: 40px;
+        height: 40px;
+        text-align: center;
+        line-height: 1;
+    }
+    .card.card.card-modul{
+        border-radius: 15px;
+    }
+    .card.card-modul:hover {
+        transition: transform 0.3s ease, box-shadow 0.3s ease; /* Menambahkan transisi pada transformasi dan bayangan */
+        cursor: pointer; /* Mengubah kursor menjadi tanda tangan saat dihover */
+        transform: translateY(-5px) scale(0.95); /* Menggeser ke atas dan sedikit menyusut */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Menambahkan bayangan */
+    }
+    
+    
+    /* modal scrolled */
+/* Style untuk modal */
+.modal {
+    display: none; /* Modal disembunyikan secara default */
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.5);
+  }
+  
+  /* Style untuk konten modal */
+  
+.modal-content {
+    display: flex;
+    flex-direction: column;
+    background-color: #fefefe;
+    margin: 15% auto; /* Menengahkan modal secara vertikal */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 600px;
+  }
+  
+  /* Style untuk tombol tutup */
+  .close {
+    align-self: flex-end;
+    color: #aaa;
+    display: inline-block;
+    font-size: 28px;
+    font-weight: bold;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, color 0.3s ease; /* Menambahkan transisi untuk perubahan warna */
+    cursor: pointer;
+    transform: translateY(-5px) scale(0.95);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.close:hover {
+    color: #000; /* Mengubah warna saat tombol dihover */
+    transform: rotate(180deg);
+}
+  
+ /* Style untuk konten modal yang dapat digulir */
+  .modal-body {
+    max-height: 300px; /* Atur tinggi maksimum konten yang dapat digulir */
+    overflow-y: auto; /* Aktifkan penampilan gulir jika konten melebihi ketinggian maksimum */
+  }  
+  /* end */
+  /* button card-link pada card konten 3 */
+  .card-link {
+    color: #4AC8AE; /* warna tautan */
+    text-decoration: none; /* menghilangkan garis bawah tautan */
+    font-weight:bold; /* membuat teks lebih tebal */
+}
+
+.card-link:hover {
+    text-decoration: underline; /* menampilkan garis bawah saat tautan dihover */
+}
+/* end */
+    
+    

@@ -6,202 +6,53 @@
 body{
     font-family: "inter";
 }
- 
- /* swiper */
-     
-       /* card slider */
-       .slide-container {
-           max-width: 1120px;
-           width: 100%;
-           padding:40px 0;
-       }
-       
-       .slide-content {
-           margin: 0 40px;
-           overflow: hidden;
-           border-radius: 25px;
-       }
-       
-       .card {        
-           border-radius: 25px;
-           background-color: #fff;
-       }
-       
-       .image-content, .card-content {
-           display: flex;
-           flex-direction: column;
-           align-items: center;
-           padding: 10px 14px;
-       }
-       
-       .image-content {
-           position: relative;
-           row-gap: 5px;
-           
-       }
-       .overlay {
-          position: absolute;
-          left: 0;
-          top: 0;
-          height: 100%;
-          width: 100%;
-          background-color: #4070f4; 
-          border-radius: 25px 25px 0 25px;
-       }
+/* Content 2 belajar */
+
+.dropdown1 .btn {
+    background-color: transparent; /* Warna latar */
+    color:  #000; /* Warna teks */
+    border: 1px solid #000000; /* Warna border */
+    border-radius: 20px; /* Bentuk border */
+    padding: 10px 20px; /* Padding tombol */
+    font-size: 16px; /* Ukuran teks */
+    cursor: pointer; /* Kursor tipe pointer saat diarahkan */
+    transition: all 0.3s ease; /* Efek transisi */
+}
+
+.dropdown1 .btn:hover {
+    background-color: #a8a8a8; /* Warna latar saat dihover */
+    border-color: #000; /* Warna border saat dihover */
+}
+.dropdown2 .btn {
+    background-color: transparent; /* Warna latar */
+    color: #000; /* Warna teks */
+    border: 1px solid #000000; /* Warna border */
+    border-radius: 20px; /* Bentuk border */
+    padding: 10px 20px; /* Padding tombol */
+    font-size: 16px; /* Ukuran teks */
+    cursor: pointer; /* Kursor tipe pointer saat diarahkan */
+    transition: all 0.3s ease; /* Efek transisi */
+    margin-left: 100px;
     
-        .overlay::before, 
-        .overlay::after{
-        content: '';
-        position: absolute;
-        right: 0;
-        bottom: -40px;
-        height: 40px;
-        width: 40px;
-        background-color: #4070f4;
-        }
-        .overlay::after{
-            border-radius: 0 25px 0 0;
-            background-color: #fff;
-        }
-
-       .card-image {
-           position: relative;
-           height: 150px;
-           width: 150px;
-           border-radius: 50%;
-           background: #fff;
-           padding: 3px;
-       }
-       
-       .card-image .card-img {
-           height: 100%;
-           width: 100%;
-           object-fit: cover;
-           border-radius: 50%;
-           border: 4px solid #4070f4;
-       }
-       
-       .name {
-           font-size: 18px;
-           font-weight: 500;
-           color: #333;
-       }
-       
-       .description {
-           font-size: 14px;
-           color: #707070;
-           text-align: center;
-       }
-       
-       .button {
-           border: none;
-           font-size: 16px;
-           color: #fff;
-           padding: 8px 16px;
-           background-color: #4070f4;
-           border-radius: 6px;
-           margin: 14px;
-           cursor: pointer;
-           transition: all 0.3s ease;
-       }
-       
-       .button:hover {
-           background: #265df2;
-       }
-       
-       .swiper-navBtn {
-           color: #6e93f7;
-           transition: color 0.3s ease;
-       }
-       
-       .swiper-navBtn:hover {
-           color: #4070f4;
-       }
-       
-       .swiper-navBtn::before,
-       .swiper-navBtn::after {
-           font-size: 40px;
-       }
-       
-       .swiper-button-next {
-           right: 0;
-       }
-       
-       .swiper-button-prev {
-           left: 0;
-       }
-       
-       .swiper-pagination.bullets {
-           background-color: #6e93f7;
-           opacity: 1;
-       }
-       
-       .swiper-pagination.bullets.active {
-           background-color: #6e93f7;
-       }
-       
-       @media screen and (max-width: 768px) {
-           .slide-content {
-               margin: 0 10px;
-           }
-           .swipper-navBtn {
-               display: none;
-           }
-       }      
-    
-        /* end */
-
-        /* carousels */
-.carousel-inner img {
-    max-height: 450px; /* Ubah sesuai kebutuhan ukuran yang diinginkan */
-    width:auto;
-    margin: 0 auto; /* Untuk memastikan gambar terpusat */
-    border-radius: 20px;
 }
 
-.carousel-control-prev,
-.carousel-control-next {
-    width: 50px; /* Lebar tombol geser */
-    height: 50px; /* Tinggi tombol geser */
-    border-radius: 50%; /* Membuat tombol geser menjadi lingkaran */
-    background-color: rgba(255, 255, 255, 0.5); /* Warna latar belakang tombol geser */
-    border: none; /* Menghapus border tombol */
-    top: 50%; /* Menempatkan tombol geser di tengah vertikal */
-    transform: translateY(-50%); /* Menyesuaikan posisi tombol geser */
+.dropdown2 .btn:hover {
+    background-color: #a8a8a8; /* Warna latar saat dihover */
+    border-color: #000; /* Warna border saat dihover */
 }
-
-.carousel-control-prev-icon,
-.carousel-control-next-icon {
-    background-color: rgba(0, 0, 0, 0.5); /* Ubah warna latar belakang ikon */
-    color: white; /* Ubah warna ikon */
-    width: 25px; /* Lebar ikon */
-    height: 25px; /* Tinggi ikon */
-    border-radius: 50%; /* Membuat ikon menjadi lingkaran */
-}
-
-.carousel-control-prev {
-    left: 0; /* Menempatkan tombol geser prev di sebelah kiri */
-}
-
-.carousel-control-next {
-    right: 0; /* Menempatkan tombol geser next di sebelah kanan */
-}
-.carousel-img {
-    object-fit: cover;
-    height: 300px; /* Atur tinggi sesuai kebutuhan Anda */
-}
-.hero-header {
-    margin-top: 50px; /* Ubah nilai sesuai kebutuhan */
-}
-
 
 
 /* end */
+ 
+
 
 /* scroll button to top */
 
-#scrollToTopBtn {
+#scrollToTopContainer {
     display: none;
+}
+
+#scrollToTopBtn {
     position: fixed;
     bottom: 20px;
     right: 20px;
@@ -209,7 +60,6 @@ body{
     background-color: transparent;
     color: #605DEC;
     border: 2px solid #605DEC;
-    /* Mengubah ke bentuk outline dengan ketebalan garis 2px */
     border-radius: 50%;
     cursor: pointer;
     padding: 15px;
@@ -219,10 +69,10 @@ body{
 
 #scrollToTopBtn:hover {
     background-color: #605DEC;
-    /* Warna background saat di hover */
     color: white;
-    /* Warna teks saat di hover */
 }
+
+
 
 /* end */
 
@@ -260,6 +110,30 @@ body{
     background-color: #ffffff; /* Ganti warna latar belakang navbar saat di-scroll */
     box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Tambahkan shadow untuk efek lift */
 }
+.navbar-nav .nav-link {
+    position: relative;
+}
+
+.navbar-nav .nav-link::after {
+    content: '';
+    position: absolute;
+    bottom: -2px; /* Jarak garis bawah dari teks */
+    left: 0;
+    width: 0; /* Mulai dengan lebar 0 */
+    height: 2px; /* Ketebalan garis bawah */
+    background-color: #46346A; /* Warna garis bawah */
+    transition: width 0.3s ease; /* Efek transisi smooth saat lebar berubah */
+}
+
+.navbar-nav .nav-link.active::after {
+    width: 100%; /* Lebar garis bawah saat item aktif */
+}
+
+.navbar-nav .nav-link:hover::after {
+    width: 90%; /* Mengurangi lebar garis bawah saat hover */
+}
+
+
 
 .card {
     margin-bottom: 10px;
@@ -317,3 +191,4 @@ font-size: 1.15rem; /* Sesuaikan ukuran font */
 padding: 3px 30px; /* Sesuaikan ukuran padding */
 }
 /* end */
+

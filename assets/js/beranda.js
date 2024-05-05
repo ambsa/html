@@ -98,7 +98,7 @@ var btn1 = document.getElementById("openModalBtn1");
 // Get the <span> element that closes the modal
 var span1 = modal1.getElementsByClassName("close")[0];
 
-// When the user clicks the button, open the modal 1
+// When the user clicks the button, open the modal  
 btn1.onclick = function() {
     openModal(modal1);
 }
@@ -194,19 +194,21 @@ function scrollFunction() {
         scrollToTopBtn.style.display = "none";
     }
 }
-$(document).ready(function(){
-    var nav = $('nav');
-    var navHeight = nav.outerHeight();
+ $(document).ready(function(){
+        var nav = $('nav');
+        var navHeight = nav.outerHeight();
 
-    $(window).scroll(function () {
-        if ($(this).scrollTop() > navHeight) {
-            nav.addClass('navbar-fixed');
-            // Tambahkan class 'navbar-scrolled' untuk efek saat di-scroll
-            nav.addClass('navbar-scrolled');
-        } else {
-            nav.removeClass('navbar-fixed');
-            // Hapus class 'navbar-scrolled' saat tidak di-scroll
-            nav.removeClass('navbar-scrolled');
-        }
+        $(window).scroll(function () {
+            if ($(this).scrollTop() > navHeight) {
+                nav.addClass('navbar-fixed');
+                // Tambahkan class 'navbar-scrolled' untuk efek saat di-scroll
+                nav.addClass('navbar-scrolled');
+            } else {
+                nav.removeClass('navbar-fixed');
+                // Hapus class 'navbar-scrolled' saat tidak di-scroll
+                nav.removeClass('navbar-scrolled');
+            }
+        });
     });
-});
+
+    
